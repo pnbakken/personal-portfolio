@@ -1,2 +1,9 @@
 @import "./variables";
+@import "./typography";
 @import "./base-layout";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

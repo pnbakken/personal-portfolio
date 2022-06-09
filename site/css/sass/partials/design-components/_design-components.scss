@@ -1,0 +1,15 @@
+.pseudo-button {
+    background: $color-blue-gradient;
+    padding: 15px 25px;
+    width: fit-content;
+    border-radius: 0.4rem;
+    border: 1px solid $color-dark-blue;
+    transition: 0.4s;
+}
+.pseudo-button:hover {
+    border-color: $color-white;
+}
+
+.blue-text {
+    color: $color-medium-blue;
+}
