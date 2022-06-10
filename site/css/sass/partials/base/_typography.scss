@@ -8,6 +8,14 @@ body {
 h1 {
     font-weight: 800;
     font-size: 40px;
+    @media(max-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 32px;
 }
 
 a {
@@ -23,7 +31,10 @@ a {
 
 nav {
     .navbar-brand {
-        font-size: 48px;
+        font-size: 2.5rem;
+        @media(max-width: 768px) {
+            font-size: 2rem;
+        }
     }
 
     a {

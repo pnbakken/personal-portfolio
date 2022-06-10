@@ -1,12 +1,16 @@
 @import "./navbar";
 
-.header-banner {
-    height: 95vh;
+#header-banner {
+    height: 100vh;
     width: 100%;
     background-image: url("../../../../assets/image/banner-image.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
+    
+    @media(max-width: 1111px) {
+        background-position: right center;
+    }
 
     .banner-content {
         display: flex;
@@ -14,23 +18,29 @@
         gap: 50px;
         position: absolute;
         left: 10%;
-        top: 30%;
+        top: 35%;
         width: 800px;
-        max-width: 90%;
-        align-items: center;
+        max-width: 95%;
+        
 
         @media(max-width: 1111px) {
             left: 30px;
             align-self: center;
         }
 
-        p {
+        .banner-text {
+            display: flex;
+            flex-direction: column;
             width: 80%;
+            gap: 30px;
+            align-items: center;
+
+            @media(max-width: 1111px) {
+                width: 80%;
+            }
         }
         
-        a {
-            
-        }
+        
     }
 
 }
