@@ -21,6 +21,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     border-radius: 5px;
+    box-shadow: $common-shadow;
 
     @media(max-width:425px) {
         width: 85%;

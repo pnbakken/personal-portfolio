@@ -1,6 +1,9 @@
 /*******
 * Colour variables
 *******/
+/*******
+* Other Variables
+******/
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -18,6 +21,7 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 32px;
+  margin-bottom: 50px;
 }
 
 a {
@@ -92,6 +96,7 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #000;
 }
 @media (max-width: 425px) {
   .divider {
@@ -118,6 +123,12 @@ nav .nav-links {
   list-style-type: none;
   display: flex;
   gap: 90px;
+}
+nav .nav-links a {
+  transition: 0.5s;
+}
+nav .nav-links a:hover {
+  color: #197aae;
 }
 nav .nav-toggle {
   display: none;
@@ -178,6 +189,10 @@ nav .nav-toggle {
   }
 }
 
+.skill-item .skill-icon {
+  width: 70px;
+}
+
 .contact-group {
   display: flex;
 }
@@ -185,6 +200,34 @@ nav .nav-toggle {
   .contact-group {
     flex-direction: column;
   }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 30px;
+  justify-content: center;
+}
+.container .container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid #111120;
+  padding: 1rem;
+  gap: 10px;
+  transition: 0.5s;
+}
+.container .container-item:hover {
+  box-shadow: 3px 3px 3px #000;
 }
 
 /*# sourceMappingURL=style.css.map */
