@@ -1,6 +1,20 @@
+.skills-container {
+    width: 45%;
+    max-width: 700px;
+    @media(max-width: 1024px) {
+        width: 70%;
+    }
+    @media(max-width: 768px) {
+        width: 85%;
+    }
+    @media(max-width: 425px) {
+        width: 95%;
+    }
+}
+
 .skill-item {
-    
+    width: 120px;
     .skill-icon {
-        width: 70px;
+        width: 60px;
     }
 }

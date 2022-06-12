@@ -1,0 +1,22 @@
+.projects-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+.project-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .project-image {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../../../../assets/image/photo-journal.png");
+    }
+}

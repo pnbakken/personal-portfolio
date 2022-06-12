@@ -21,11 +21,15 @@
         top: 35%;
         width: 800px;
         max-width: 95%;
+        align-items: center;
         
 
         @media(max-width: 1111px) {
             left: 30px;
             align-self: center;
+        }
+        @media(max-width: 900px) {
+            width: 80%;
         }
 
         .banner-text {
@@ -37,6 +41,9 @@
 
             @media(max-width: 1111px) {
                 width: 80%;
+            }
+            @media(max-width: 768px) {
+                width: 90%;
             }
         }
         
