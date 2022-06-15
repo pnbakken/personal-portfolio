@@ -2,9 +2,12 @@ nav {
     display: flex;
     height: 130px;
     gap: 100px;
-    padding: 0 30px 0 30px;
+    padding: 0 30px 0 30px!important;
     align-items: center;
     width: 100%;
+    .navbar-brand {
+        color: $color-white;
+    }
 
     .nav-links {
         list-style-type: none;
@@ -13,9 +16,14 @@ nav {
         
         a {
             transition: $common-transition;
+            color: $color-white;
+            
         }
         a:hover {
             color: $color-medium-blue;
+        }
+        .active {
+            color: $color-medium-blue!important;
         }
     }
 
@@ -27,7 +35,7 @@ nav {
 
         justify-content: space-between;
         gap: 0;
-        padding-right: 15px;
+        padding: 15px!important;
         .nav-links {
             display: none;
         }

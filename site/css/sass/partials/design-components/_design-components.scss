@@ -4,7 +4,7 @@
     width: fit-content;
     border-radius: 0.4rem;
     border: 1px solid $color-dark-blue;
-    transition: 0.4s;
+    transition: $common-transition;
 }
 .pseudo-button:hover {
     border-color: $color-white;
@@ -18,8 +18,8 @@
     background: $color-blue-gradient;
     width: 75%;
     height: 5px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     border-radius: 2.5px;
     box-shadow: $common-shadow;
 
@@ -34,3 +34,4 @@
     margin-top: -5px;
     z-index: 1;
 }
+

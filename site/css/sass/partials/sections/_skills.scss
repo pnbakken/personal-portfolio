@@ -13,7 +13,9 @@
 }
 
 .skill-item {
-    box-shadow: $common-shadow;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 10px;
     width: 120px;
     .skill-icon {
         width: 60px;
