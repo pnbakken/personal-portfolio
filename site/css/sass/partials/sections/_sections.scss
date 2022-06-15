@@ -14,6 +14,7 @@ section {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    align-items: center;
     
 
     .container-item {
@@ -21,9 +22,5 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        padding: 1rem;
-        gap: 10px;
-        transition: $common-transition;
-        box-shadow: $common-shadow;
     }
 }

@@ -32,14 +32,13 @@ a {
 
 nav {
     .navbar-brand {
-        font-size: 2.5rem;
+        font-size: 32px;
         @media(max-width: 768px) {
-            font-size: 2rem;
+            font-size: 24px;
         }
     }
 
     a {
-        font-size: 24px;
     }
     a.active {
         color: $color-medium-blue;

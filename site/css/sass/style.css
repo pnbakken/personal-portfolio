@@ -35,15 +35,12 @@ a {
 }
 
 nav .navbar-brand {
-  font-size: 2.5rem;
+  font-size: 32px;
 }
 @media (max-width: 768px) {
   nav .navbar-brand {
-    font-size: 2rem;
+    font-size: 24px;
   }
-}
-nav a {
-  font-size: 24px;
 }
 nav a.active {
   color: #197aae;
@@ -201,25 +198,44 @@ nav .nav-toggle {
 }
 
 .projects-container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
   gap: 50px;
 }
 
 .project-item {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  max-width: 400px;
+  width: 45%;
+  position: relative;
 }
-.project-item .project-image {
+
+.project-image {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-size: cover;
   background-position: center;
-  background-image: url("../../../../assets/image/photo-journal.png");
+}
+
+.project-details {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: #111120e0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transition: 0.5s;
+  padding: 1rem;
+}
+
+.project-item:hover .project-details {
+  display: flex;
+}
+
+.project-item:not(:hover) .project-details {
+  display: none;
 }
 
 .skills-container {
@@ -243,6 +259,7 @@ nav .nav-toggle {
 }
 
 .skill-item {
+  box-shadow: 3px 3px 3px #000;
   width: 120px;
 }
 .skill-item .skill-icon {
@@ -270,16 +287,13 @@ section {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 .container .container-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding: 1rem;
-  gap: 10px;
-  transition: 0.5s;
-  box-shadow: 3px 3px 3px #000;
 }
 
 /*# sourceMappingURL=style.css.map */
