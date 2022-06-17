@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#header-banner" class="nav-link active has-text" data-textname>Home</a>
+                            <a href="#header-banner" class="nav-link active has-text" data-textname="navHome">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#projects" class="nav-link has-text" data-textname="navWork">Work</a>
@@ -71,14 +71,14 @@
         <div class="divider"></div>
 
         <section id="contact">
-            <h2 id="contact-heading">Contact me</h2>
+            <h2 class="has-text" data-textname="contactHeading">Contact me</h2>
             <div class="contact-group">
                 <form id="contact-form">
-                    <h3 id="form-heading">Send me a message</h3>
+                    <h3 id="form-heading" class="has-text" data-textname="contactFormHeading">Send me a message</h3>
 
                 </form>
                 <div class="contact-social">
-                    <h3 id="social-heading">Find me other places</h3>
+                    <h3 id="social-heading" class="has-text" data-textname="socialHeading">Find me other places</h3>
                     <ul class="social-links">
                         <li>
                             <a class="social-link" href="#">github.com/pnbakken</a>
@@ -107,10 +107,12 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="module" src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+          disable: 'mobile',
+      });
     </script>
-    <script type="module" src="./js/script.js"></script>
 </body>
 </html>
