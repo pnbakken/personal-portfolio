@@ -7,12 +7,18 @@ nav {
     width: 100%;
     .navbar-brand {
         color: $color-white;
+        margin-right: 90px;
+        @media(max-width: 991px) {
+            margin-right: 0;
+        }
     }
 
-    .nav-links {
+    .navbar-nav {
         list-style-type: none;
-        display: flex;
-        gap: 90px;
+        gap: 5px;
+        @media (min-width: 991px) {
+            gap: 90px;
+        }
         
         a {
             transition: $common-transition;

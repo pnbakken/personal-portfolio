@@ -1,42 +1,59 @@
 .projects-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     gap: 50px;
     
 }
 
 .project-item {
-    max-width: 400px;
-    width: 45%;
+    max-width: 500px;
+    width: 30%;
     position: relative;
+    text-decoration: none;
+    @media(max-width: 1200px) {
+        width: 50%;
+    }
+    @media(max-width: 900px) {
+        width: 70%;
+    }
+    @media(max-width: 768px) {
+        width: 95%;
+    }
 }
 
     .project-image {
         width: 100%;
-        height: 250px;
+        height: 300px;
         background-size: cover;
         background-position: center;
         
     }
 
     .project-details {
-        display: none;
+        opacity: 0;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         position: absolute;
         background: $color-abyss-blue-transparent;
         width: 100%;
-        height: 100%;
+        height: 300px;
         margin: 0 auto;
-        transition: $common-transition;
+        transition: $common-transition ;
         padding: 1rem;
+        color: $color-white;
+        
+        a {
+            color: $color-white;
+            text-decoration: underline;
+        }
     }
    
 
 .project-item:hover .project-details {
-    display: flex;
+    opacity: 1;
 }
 .project-item:not(:hover) .project-details {
-    display: none;
+    opacity: 0;
 }

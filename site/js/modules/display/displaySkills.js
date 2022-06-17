@@ -25,6 +25,6 @@ function buildSkillList(skills) {
 function createSkillItem(skill) {
     return `<div class="container-item skill-item">
                 <img class="item-image skill-icon" src="${skill.image_url}" alt ="${skill.name}" />
-                <h4 class="item-name skill-name">${skill.name}</h4>
+                <span class="item-name skill-name">${skill.name}</span>
             </div>`;
 }

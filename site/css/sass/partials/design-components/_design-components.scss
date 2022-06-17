@@ -5,9 +5,11 @@
     border-radius: 0.4rem;
     border: 1px solid $color-dark-blue;
     transition: $common-transition;
+    color: $color-white;
 }
 .pseudo-button:hover {
     border-color: $color-white;
+    color: $color-white;
 }
 
 .blue-text {
