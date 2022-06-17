@@ -17,7 +17,7 @@ export default async function displayProjects(lang) {
     console.log(target);
 }
 
-function buildProjectList(projects, lang) {
+function buildProjectList(projects, lang="eng") {
     let html = "";
 
     projects.forEach((project) => html += projectToHTML(project.attributes));
