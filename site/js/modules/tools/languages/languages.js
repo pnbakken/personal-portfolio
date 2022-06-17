@@ -20,7 +20,7 @@ export const languages = {
         navSkills: "Teknologi",
         navContact: "Ta kontakt",
         navAbout: `Om meg`, 
-        pageHeading: `Responsive, <span class="blue-text">elegante,</span> nettsider som er enkle å bruke`, 
+        pageHeading: `Responsive, <span class="blue-text">elegante</span> nettsider som er enkle å bruke`, 
         bannerText: `Dette er teksten jeg skal ha i helte-banneret. Ser bra ut og er oversatt til det språket brukeren har valgt`,
         bannerCTA: "Ta kontakt",
         projectsHeading: `Prosjekter`,

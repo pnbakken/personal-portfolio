@@ -346,4 +346,9 @@ section {
   border: none;
 }
 
+.language-select img {
+  width: 40px;
+  height: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
