@@ -256,6 +256,7 @@ nav .nav-toggle {
   height: 300px;
   background-size: cover;
   background-position: center;
+  border-radius: 0.2rem;
 }
 
 .project-details {
@@ -272,6 +273,7 @@ nav .nav-toggle {
   transition: 0.5s;
   padding: 1rem;
   color: #fbfbff;
+  border-radius: 0.2rem;
 }
 .project-details a {
   color: #fbfbff;
@@ -346,9 +348,16 @@ section {
   border: none;
 }
 
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+
 .language-select img {
-  width: 40px;
-  height: 30px;
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
