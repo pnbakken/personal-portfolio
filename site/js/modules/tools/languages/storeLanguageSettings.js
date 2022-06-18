@@ -24,6 +24,7 @@ export function clearLanguage() {
 export function insertClearButton(lang) {
     $("#clear-language").style = "display: inline";
     $("#clear-language").onclick = ((event) => {
+        window.location.search = ""; // prevent language getting saved again if user refreshes the page.
         event.preventDefault();
         clearLanguage();
         $("#clear-language").innerHTML = languages[lang].languageRemoved;
