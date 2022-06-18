@@ -26,7 +26,7 @@ export const languages = {
 
     nob : {
         navHome: "Hjem",
-        navWork: "Prosjekter", 
+        navWork: "Prosjekt", 
         navTechnologies: "Teknologi",
         navContact: "Ta kontakt",
         navAbout: `Om meg`, 
@@ -35,7 +35,7 @@ export const languages = {
         bannerText: `Dette er teksten jeg skal ha i helte-banneret. Ser bra ut og er oversatt til det språket brukeren har valgt`,
         bannerCTA: "Ta kontakt",
 
-        projectsHeading: `Prosjekter`,
+        projectsHeading: `Prosjekt`,
         visit: `Besøk`,
         githubLink: `Se på GitHub`,
 
