@@ -11,11 +11,6 @@ export default async function displayProjects(lang) {
     if (projects) {
         target.innerHTML = buildProjectList(projects.data, lang);
     }
-
-    console.log(projects);
-
-    
-    console.log(target);
 }
 
 function buildProjectList(projects, lang="eng") {

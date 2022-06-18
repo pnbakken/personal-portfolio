@@ -77,8 +77,8 @@ html, body {
 }
 
 body {
-  background: #fbfbff;
-  color: #111120;
+  background: #111120;
+  color: #fbfbff;
 }
 
 .pseudo-button {
@@ -103,6 +103,7 @@ body {
   margin: 0;
   padding: 0;
   text-decoration: underline;
+  color: #fbfbff;
 }
 
 .blue-text {
