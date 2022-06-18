@@ -12,6 +12,15 @@
     color: $color-white;
 }
 
+.discrete-button {
+    width: fit-content!important;
+    background: none!important;
+    border:none!important;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
 .blue-text {
     color: $color-medium-blue;
 }

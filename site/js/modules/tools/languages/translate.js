@@ -1,9 +1,12 @@
-import $ from "../domSelector.js";
+import {$all} from "../helpers/domSelector.js";
 import { languages } from "./languages.js";
 export default function translate(lang) {
     
 
-        document.querySelectorAll(".has-text").forEach((element) => element.innerHTML = languages[lang][element.dataset.textname]);
+        $all(".has-text").forEach((element) => {
+            element.innerHTML = languages[lang][element.dataset.textname];
+            console.log(languages[lang][element.dataset.textname]);
+        });
 
 
     

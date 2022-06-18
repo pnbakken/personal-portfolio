@@ -1,5 +1,6 @@
 import { baseURL } from "../settings/baseURL.js";
 import { fetchFromAPI } from "../tools/interfaceAPI.js";
+import { languages } from "../tools/languages/languages.js";
 import addLoader from "./display-utils/addLoader.js";
 
 export default async function displayProjects(lang) {
@@ -35,7 +36,9 @@ function buildProjectList(projects, lang="eng") {
                         <p>${project[langDescription]}</p>
                         
                         <div class="skill-list"></div>
-                        <a href="${project.project_url}">Visit</a>
+                        <div class="project-links">
+                            <a href="${project.github_url}"><img src="./assets/icon/technology/icon-github-light.svg"/ alt="${languages[lang].githubLink}"></a> <a href="${project.project_url}">${languages[lang].visit}</a>
+                        </div>
                     </div>                    
         
 

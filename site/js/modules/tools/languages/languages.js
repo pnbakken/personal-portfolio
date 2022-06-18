@@ -11,12 +11,17 @@ export const languages = {
         bannerCTA: `Get in touch`,
 
         projectsHeading: `Projects`,
+        visit: `Visit`,
+        githubLink: `See on GitHub`,
 
         contactHeading: `Contact me`,
         contactFormHeading: `Send me a message`,
         socialHeading: `Find me other places`,
 
         techsHeading: `Technologies`,
+
+        removeStoredLanguage: `Clear stored language selection`,
+        languageRemoved: `Language selection cleared`,
     },
 
     nob : {
@@ -31,11 +36,16 @@ export const languages = {
         bannerCTA: "Ta kontakt",
 
         projectsHeading: `Prosjekter`,
+        visit: `Besøk`,
+        githubLink: `Se på GitHub`,
 
         contactHeading: `Kontakt meg`,
         contactFormHeading: `Send meg en melding`,
         socialHeading: `Finn meg andre steder`,
-        
+
         techsHeading: `Teknologi`,
+
+        removeStoredLanguage: `Fjern lagret språkvalg`,
+        languageRemoved: `Språkvalg fjernet`,
     },
 };
