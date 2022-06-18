@@ -3,10 +3,7 @@ import { languages } from "./languages.js";
 export default function translate(lang) {
     
 
-        $all(".has-text").forEach((element) => {
-            element.innerHTML = languages[lang][element.dataset.textname];
-            console.log(languages[lang][element.dataset.textname]);
-        });
+        $all(".has-text").forEach((element) => element.innerHTML = languages[lang][element.dataset.textname]);
 
 
     
