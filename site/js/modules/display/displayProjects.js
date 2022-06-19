@@ -2,27 +2,36 @@ import { baseURL } from "../settings/baseURL.js";
 import { fetchFromAPI } from "../tools/interfaceAPI.js";
 import { languages } from "../tools/languages/languages.js";
 import addLoader from "./display-utils/addLoader.js";
+import { createGenericErrorMessage } from "./display-utils/createMessage.js";
 
-export default async function displayProjects(lang) {
+export default async function displayProjects(lang="eng") {
     const target = document.querySelector(".projects-container");
-    addLoader(target);
+    addLoader(target, lang);
 
     const projects = await fetchFromAPI("api/projects");
     if (projects) {
         target.innerHTML = buildProjectList(projects.data, lang);
+    } else {
+        createGenericErrorMessage(target, lang);
     }
 }
 
-function buildProjectList(projects, lang="eng") {
+function buildProjectList(projects, lang) {
     let html = "";
 
-    projects.forEach((project) => html += projectToHTML(project.attributes));
+    let counter = 0;
+    projects.forEach((project) => {
+        html += projectToHTML(project.attributes, counter);
+        counter++;
+    });
     return html;
 
-    function projectToHTML(project) {
+    function projectToHTML(project, counter) {
+
+        const direction = (counter % 2 === 0) ? "left" : "up";
         const langDescription = `description_${lang}`;
         console.log(project);
-        return `<div class="container-item project-item">
+        return `<div class="container-item project-item" data-aos="flip-${direction}" data-aos-duration="700">
                    
                     <div class="item-image project-image" style="background-image: url('${project.image_url}');"></div>
                     <h3 class="project-name">${project.name}</h3>

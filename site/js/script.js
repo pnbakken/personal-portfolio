@@ -27,4 +27,4 @@ if (hasStoredLanguage() && !urlParams.has("lang")) {
 } 
 
 displayProjects(lang);
-displaySkills();
+displaySkills(lang);

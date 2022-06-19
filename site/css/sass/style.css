@@ -82,7 +82,7 @@ body {
 }
 
 .pseudo-button {
-  background: linear-gradient(#197aae, 80%, #0C4869);
+  background: linear-gradient(#0C4869, 80%, #111120);
   padding: 12.5px 20px;
   width: fit-content;
   border-radius: 0.4rem;
@@ -111,7 +111,7 @@ body {
 }
 
 .divider {
-  background: linear-gradient(#197aae, 80%, #0C4869);
+  background: linear-gradient(#0C4869, 80%, #111120);
   width: 75%;
   height: 5px;
   margin-top: 200px;

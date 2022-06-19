@@ -15,13 +15,21 @@ export const languages = {
         githubLink: `See on GitHub`,
 
         contactHeading: `Contact me`,
+
         contactFormHeading: `Send me a message`,
+        contactName: `Your name`,
+        contactEmail:`Your email`,
         socialHeading: `Find me other places`,
+
+        aboutHeading: `About me`,
 
         techsHeading: `Technologies`,
 
         removeStoredLanguage: `Clear stored language selection`,
         languageRemoved: `Language selection cleared`,
+
+        pleaseWait: `Please wait`,
+        genericError: `Something went wrong`,
     },
 
     nob : {
@@ -40,12 +48,21 @@ export const languages = {
         githubLink: `Se på GitHub`,
 
         contactHeading: `Kontakt meg`,
+
         contactFormHeading: `Send meg en melding`,
+        contactName: `Ditt navn`,
+        contactEmail:`Din epost`,
+
         socialHeading: `Finn meg andre steder`,
+
+        aboutHeading: `Om meg`,
 
         techsHeading: `Teknologi`,
 
         removeStoredLanguage: `Fjern lagret språkvalg`,
         languageRemoved: `Språkvalg fjernet`,
+
+        pleaseWait: `Vennligst vent`,
+        genericError: `Noe gikk galt`,
     },
 };
