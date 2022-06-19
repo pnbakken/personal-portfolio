@@ -2,12 +2,12 @@
 import displaySkills from "./modules/display/displaySkills.js";
 import displayProjects from "./modules/display/displayProjects.js";
 import translate from "./modules/tools/languages/translate.js";
-import {hasStoredLanguage, saveLanguage, getStoredLanguage, clearLanguage, insertClearButton} from "./modules/tools/languages/storeLanguageSettings.js";
+import {hasStoredLanguage, saveLanguage, getStoredLanguage, insertClearButton} from "./modules/tools/languages/storeLanguageSettings.js";
 import { $ } from "./modules/tools/helpers/domSelector.js";
 import { languages } from "./modules/tools/languages/languages.js";
 import { createMessage } from "./modules/display/display-utils/createMessage.js";
 
-let lang;
+let lang = "eng";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
