@@ -7,7 +7,7 @@ export const languages = {
         navAbout: `About me`,
 
         pageHeading: `Responsive, <span class="blue-text">elegant,</span> easy-to-use websites`, 
-        bannerText: `The text I will be using in the hero banner; looking very nice and displayed in the language the user has selected.`,
+        bannerText: `The text I will be using in the hero banner; looking very nice and displayed in the language the user has selected.<br>Some parts of the website might still be unfinished and most of the text needs rewriting.`,
         bannerCTA: `Get in touch`,
 
         projectsHeading: `Projects`,
@@ -45,7 +45,7 @@ export const languages = {
         navAbout: `Om meg`, 
 
         pageHeading: `Responsive, <span class="blue-text">elegante</span> nettsider som er enkle å bruke`, 
-        bannerText: `Dette er teksten jeg skal ha i helte-banneret. Ser bra ut og er oversatt til det språket brukeren har valgt`,
+        bannerText: `Dette er teksten jeg skal ha i helte-banneret. Ser bra ut og er oversatt til det språket brukeren har valgt.<br>Noen deler av nettsiden er fremdeles uferdige i tillegg til at de fleste tekstene må skrives om.`,
         bannerCTA: "Ta kontakt",
 
         projectsHeading: `Prosjekt`,
