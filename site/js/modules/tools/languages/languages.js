@@ -19,6 +19,11 @@ export const languages = {
         contactFormHeading: `Send me a message`,
         contactName: `Your name`,
         contactEmail:`Your email`,
+        contactSubject: `Message subject`,
+        messageText: `Your message`,
+        sendButton: `Send message`,
+        formNotActive: `The form is currently disabled`,
+
         socialHeading: `Find me other places`,
 
         aboutHeading: `About me`,
@@ -52,6 +57,10 @@ export const languages = {
         contactFormHeading: `Send meg en melding`,
         contactName: `Ditt navn`,
         contactEmail:`Din epost`,
+        contactSubject: `Emne`, 
+        messageText: `Din melding`,
+        sendButton: `Send melding`,
+        formNotActive: `Skjemaet er foreløpig deaktivert`,
 
         socialHeading: `Finn meg andre steder`,
 

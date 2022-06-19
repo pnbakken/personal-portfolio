@@ -5,6 +5,7 @@ import translate from "./modules/tools/languages/translate.js";
 import {hasStoredLanguage, saveLanguage, getStoredLanguage, clearLanguage, insertClearButton} from "./modules/tools/languages/storeLanguageSettings.js";
 import { $ } from "./modules/tools/helpers/domSelector.js";
 import { languages } from "./modules/tools/languages/languages.js";
+import { createMessage } from "./modules/display/display-utils/createMessage.js";
 
 let lang;
 
@@ -28,3 +29,7 @@ if (hasStoredLanguage() && !urlParams.has("lang")) {
 
 displayProjects(lang);
 displaySkills(lang);
+$("#submit-message").onclick = ((event) => {
+    event.preventDefault();
+    createMessage($("#form-message"), "info-message", languages[lang].formNotActive);
+});
