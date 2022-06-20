@@ -13,6 +13,8 @@ export const languages = {
         projectsHeading: `Projects`,
         visit: `Visit`,
         githubLink: `See on GitHub`,
+        yourProject: `Your project here?`,
+        projectCall: `Get in touch for a conversation about how I can find the best solution for you.`,
 
         contactHeading: `Contact me`,
 
@@ -51,6 +53,8 @@ export const languages = {
         projectsHeading: `Prosjekt`,
         visit: `Besøk`,
         githubLink: `Se på GitHub`,
+        yourProject: `Ditt prosjekt her?`,
+        projectCall: `Ta kontakt for en samtale om hvordan jeg kan finne den beste løsningen for deg`,
 
         contactHeading: `Kontakt meg`,
 

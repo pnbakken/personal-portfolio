@@ -24,6 +24,10 @@ function buildProjectList(projects, lang) {
         html += projectToHTML(project.attributes, counter);
         counter++;
     });
+    html += `<div class="container-item project-item" data-aos="fade-up" data-aos-duration="5000">
+                <h3 class="has-text">${languages[lang].yourProject}</h3>
+                <p class="has-text" data-textname="projectCall">${langues[lang].projectCall}</p>
+            </div>`;
     return html;
 
     function projectToHTML(project, counter) {
