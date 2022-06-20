@@ -26,7 +26,8 @@ function buildProjectList(projects, lang) {
     });
     html += `<div class="container-item project-item" data-aos="fade-up" data-aos-duration="5000">
                 <h3 class="has-text">${languages[lang].yourProject}</h3>
-                <p class="has-text" data-textname="projectCall">${langues[lang].projectCall}</p>
+                <p class="has-text" data-textname="projectCall">${languages[lang].projectCall}</p>
+                <a class="pseudo-button has-text" data-textname="bannerCTA" href="#contact">${languages[lang].bannerCTA}</a>
             </div>`;
     return html;
 
