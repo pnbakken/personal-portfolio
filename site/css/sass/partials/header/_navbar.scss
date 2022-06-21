@@ -61,16 +61,13 @@ nav {
     position: fixed;
     z-index: 2;
     height: 80px;
-<<<<<<< HEAD
     transition: $common-transition ease-in;
-=======
-    transition: $common-transition ease-in;
->>>>>>> 547477697cee15d95018e5545bfbb9af1fdeef33
 
-    .container-fluid {
+    .collapse {
         background: $color-abyss-blue;
-        width:100%;
+        width:100vw;
         margin: 0!important;
+        transition: $common-transition;
     }
 }
 
