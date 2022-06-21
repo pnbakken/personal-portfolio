@@ -201,7 +201,7 @@ nav .nav-toggle {
   position: fixed;
   z-index: 2;
   height: 80px;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .scrolling-nav .container-fluid {
   background: #111120;
@@ -443,7 +443,6 @@ nav .nav-toggle {
 .contact-group .contact-social .social-links a {
   display: flex;
   gap: 10px;
-  align-items: center;
   color: #fbfbff;
 }
 .contact-group .contact-social .social-links a img {
