@@ -61,7 +61,11 @@ nav {
     position: fixed;
     z-index: 2;
     height: 80px;
-    transition: $common-transition ease-in-out;
+<<<<<<< HEAD
+    transition: $common-transition ease-in;
+=======
+    transition: $common-transition ease-in;
+>>>>>>> 547477697cee15d95018e5545bfbb9af1fdeef33
 
     .container-fluid {
         background: $color-abyss-blue;
