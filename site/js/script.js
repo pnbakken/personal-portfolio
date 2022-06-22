@@ -12,6 +12,7 @@ import activeNavbar from "./modules/display/display-utils/activeNavbar.js";
 
 fixedNavOnScroll();
 activeNavbar();
+
 (function init() {
     let lang = "eng";
 
