@@ -1,7 +1,6 @@
 .custom-nav {
     display: flex;
-    height: 100px;
-    margin-top: 30px;
+    margin-top: 60px;
     gap: 100px;
     padding: 0!important;
     align-items: center;
@@ -59,9 +58,11 @@
         }
     }
 
-    .collapse {
-        transition: $common-transition ease-in-out;
+    .collapse,.collapsing {
+        padding-left: 30px!important;
     }
+
+    
     
 }
 
@@ -69,14 +70,13 @@
     background: $color-abyss-blue;
     position: fixed;
     z-index: 2;
-    height: 80px;
+    margin-top: 30px!important;
     transition: $common-transition ease-in;
     margin-top: 0;
     
     
-    .collapse {
+    .show {
         background: $color-abyss-blue;
-        
     }
 }
 
