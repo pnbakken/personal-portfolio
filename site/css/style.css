@@ -204,9 +204,10 @@ body {
 
 .custom-nav {
   display: flex;
-  margin-top: 60px;
   gap: 100px;
   padding: 0 !important;
+  padding-top: 50px !important;
+  padding-bottom: 10px !important;
   align-items: center;
   width: 100%;
   position: relative;
@@ -268,7 +269,8 @@ body {
   background: #111120;
   position: fixed;
   z-index: 2;
-  margin-top: 30px !important;
+  padding-top: 30px !important;
+  padding-bottom: 10px !important;
   transition: 0.5s ease-in;
   margin-top: 0;
 }

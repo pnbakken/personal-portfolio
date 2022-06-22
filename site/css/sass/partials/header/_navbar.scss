@@ -1,8 +1,10 @@
 .custom-nav {
     display: flex;
-    margin-top: 60px;
+    
     gap: 100px;
     padding: 0!important;
+    padding-top: 50px!important;
+    padding-bottom: 10px!important;
     align-items: center;
     width: 100%;
     position: relative;
@@ -70,7 +72,8 @@
     background: $color-abyss-blue;
     position: fixed;
     z-index: 2;
-    margin-top: 30px!important;
+    padding-top: 30px!important;
+    padding-bottom: 10px!important;
     transition: $common-transition ease-in;
     margin-top: 0;
     
