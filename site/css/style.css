@@ -185,7 +185,7 @@ body {
   width: 75%;
   height: 5px;
   margin-top: 200px;
-  border-radius: 2.5px;
+  border-radius: 0.4rem;
   box-shadow: 3px 3px 3px #000;
 }
 @media (max-width: 425px) {
@@ -281,7 +281,7 @@ nav .nav-toggle {
 #header-banner {
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/image/banner-image.jpg");
+  background-image: url("/develop/assets/image/banner-image.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -512,6 +512,50 @@ nav .nav-toggle {
 @media (max-width: 600px) {
   .contact-group .contact-social .social-links a img {
     width: 25px;
+  }
+}
+
+.about-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row !important;
+  width: 80%;
+  max-width: 1200px;
+  align-items: top;
+  justify-content: center;
+  gap: 10%;
+}
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+}
+.about-content .bio-image {
+  width: 300px;
+  height: 300px;
+  background-image: url("/develop/assets/image/author-image.jpg");
+  background-size: cover;
+  border-radius: 0.2rem;
+}
+.about-content .bio-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .about-content .bio-text {
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .about-content .bio-text {
+    width: 95%;
   }
 }
 
