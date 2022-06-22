@@ -267,7 +267,6 @@ nav .nav-toggle {
   background: #111120;
   width: 100vw;
   margin: 0 !important;
-  transition: 0.5s;
 }
 
 .navbar-toggler, .navbar-toggler:focus {
@@ -505,6 +504,7 @@ nav .nav-toggle {
   display: flex;
   gap: 10px;
   color: #fbfbff;
+  align-items: baseline;
 }
 .contact-group .contact-social .social-links a img {
   width: 30px;
