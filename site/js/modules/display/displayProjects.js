@@ -36,7 +36,7 @@ function buildProjectList(projects, lang) {
         const direction = (counter % 2 === 0) ? "down" : "up";
         const langDescription = `description_${lang}`;
         console.log(project);
-        return `<div class="container-item project-item" data-aos="fade-${direction}" data-aos-duration="1500">
+        return `<div class="container-item project-item" data-aos="fade-in" data-aos-duration="1500">
                    
                     <div class="item-image project-image" style="background-image: url('${project.image_url}');"></div>
                     <h3 class="project-name">${project.name}</h3>
