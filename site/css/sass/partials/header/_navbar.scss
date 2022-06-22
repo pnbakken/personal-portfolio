@@ -1,15 +1,23 @@
-nav {
+.custom-nav {
     display: flex;
-    height: 130px;
+    height: 100px;
+    margin-top: 30px;
     gap: 100px;
-    padding: 0 30px 0 30px!important;
+    padding: 0!important;
     align-items: center;
     width: 100%;
-    position: absolute;
+    position: relative;
     transition: $common-transition;
+
+    .container-fluid {
+        width: 100%!important;
+        padding: 0!important;
+        padding-top: 15px!important;
+    }
     .navbar-brand {
         color: $color-white;
         margin-right: 90px;
+        margin-left: 30px;
         @media(max-width: 991px) {
             margin-right: 0;
         }
@@ -18,6 +26,7 @@ nav {
     .navbar-nav {
         list-style-type: none;
         gap: 5px;
+        padding: 30px;
         @media (min-width: 991px) {
             gap: 90px;
         }
@@ -35,15 +44,14 @@ nav {
         }
     }
 
-    .nav-toggle {
-        display: none;
+    .navbar-toggler {
+        margin-right: 30px;
     }
 
     @media(max-width:1024px) {
 
         justify-content: space-between;
         gap: 0;
-        padding: 15px!important;
         .nav-links {
             display: none;
         }
@@ -62,11 +70,12 @@ nav {
     z-index: 2;
     height: 80px;
     transition: $common-transition ease-in;
-
-    .collapse {
+    margin-top: 0;
+    
+    
+    .show {
         background: $color-abyss-blue;
-        width:100vw;
-        margin: 0!important;
+        
     }
 }
 
