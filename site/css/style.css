@@ -526,7 +526,7 @@ nav .nav-toggle {
   max-width: 1200px;
   align-items: top;
   justify-content: center;
-  gap: 10%;
+  gap: 5%;
 }
 @media (max-width: 1024px) {
   .about-content {
