@@ -3,7 +3,7 @@
 @import "./contact";
 @import "./about";
 
-section {
+section,article {
     display: flex;
     flex-direction: column;
     align-items: center;

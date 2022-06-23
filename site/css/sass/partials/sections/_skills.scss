@@ -7,8 +7,8 @@
     @media(max-width: 768px) {
         width: 85%;
     }
-    @media(max-width: 425px) {
-        width: 95%;
+    @media(max-width: 500px) {
+        width: 90%;
     }
 }
 
@@ -19,7 +19,23 @@
     width: 120px;
     height: 134px;
     box-shadow: $common-shadow;
+
     .skill-icon {
         width: 60px;
+        
+    }
+    
+    @media(max-width: 500px) {
+        .skill-name {
+            display: none;
+        }
+        .skill-icon {
+            width: 55px;
+            
+        }
+
+        height: 80px;
+        width: 60px;
+        padding: 0.5rem;
     }
 }

@@ -30,9 +30,9 @@
 
     .navbar-nav {
         list-style-type: none;
-        gap: 5px;
+        gap: 50px;
 
-        @media (min-width: 991px) {
+        @media (min-width: 1024px) {
             gap: 90px;
         }
 

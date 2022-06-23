@@ -32,6 +32,7 @@ export const languages = {
 
         techsHeading: `Technologies`,
 
+        servicesHeading:`Services`,
         removeStoredLanguage: `Clear stored language selection`,
         languageRemoved: `Language selection cleared`,
 
@@ -71,6 +72,8 @@ export const languages = {
         aboutHeading: `Om meg`,
 
         techsHeading: `Teknologi`,
+
+        servicesHeading:`Tjenester`,
 
         removeStoredLanguage: `Fjern lagret språkvalg`,
         languageRemoved: `Språkvalg fjernet`,
