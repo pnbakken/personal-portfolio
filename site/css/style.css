@@ -157,7 +157,7 @@ body {
 
 .pseudo-button {
   background: linear-gradient(#0C4869, 80%, #111120);
-  padding: 12.5px 20px;
+  padding: 6px 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -492,9 +492,12 @@ body {
   align-self: center;
 }
 .contact-group #contact-form input, .contact-group #contact-form textarea {
-  background: #1e1e27;
+  background: #383844;
   border: none;
   color: #fbfbff;
+}
+.contact-group #contact-form textarea {
+  height: 150px;
 }
 .contact-group .contact-social {
   display: flex;
