@@ -93,6 +93,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
+  position: relative;
+  height: 290px;
+  justify-content: space-between;
 }
 .loader .spinner,
 .loader .spinner:before,
