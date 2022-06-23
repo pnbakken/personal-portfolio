@@ -13,7 +13,9 @@
 
     #contact-form {
         width: 45%;
-
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         @media(max-width: 768px) {
             
                 width: 100%;
@@ -50,12 +52,14 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
+            margin-top: 50px;
     
             @media(max-width: 768px) {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 40px;
+                margin-top: 0;
             }
             a {
                 display: flex;
@@ -64,9 +68,14 @@
                 align-items: baseline;
                 img {
                     width: 30px;
-    
-                    @media(max-width: 600px) {
-                        width: 25px;
+                }
+
+                @media(max-width: 768px) {
+                    .icon-text {
+                        display: none;
+                    }
+                    img {
+                        width: 40px;
                     }
                 }
             }
