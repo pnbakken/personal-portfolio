@@ -219,6 +219,12 @@ body {
   width: 100%;
   position: relative;
   transition: 0.5s;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .custom-nav {
+    background: #111120;
+  }
 }
 .custom-nav .container-fluid {
   width: 100% !important;
@@ -243,6 +249,14 @@ body {
     gap: 90px;
   }
 }
+@media (max-width: 991px) {
+  .custom-nav .navbar-nav {
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 10px;
+    gap: 20px !important;
+  }
+}
 .custom-nav .navbar-nav a {
   transition: 0.5s;
   color: #fbfbff;
@@ -260,12 +274,6 @@ body {
   .custom-nav {
     justify-content: space-between;
     gap: 0;
-  }
-  .custom-nav .nav-links {
-    display: none;
-  }
-  .custom-nav .nav-toggle {
-    display: block;
   }
 }
 .custom-nav .collapse, .custom-nav .collapsing {

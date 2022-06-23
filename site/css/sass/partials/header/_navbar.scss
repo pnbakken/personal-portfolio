@@ -9,6 +9,11 @@
     width: 100%;
     position: relative;
     transition: $common-transition;
+    z-index: 1;
+    @media(max-width:991px) {
+        background: $color-abyss-blue;
+        
+    }
 
     .container-fluid {
         width: 100%!important;
@@ -26,9 +31,20 @@
     .navbar-nav {
         list-style-type: none;
         gap: 5px;
+
         @media (min-width: 991px) {
             gap: 90px;
         }
+
+        @media(max-width: 991px) {
+            
+            justify-content: space-evenly;
+            align-items: baseline;
+            padding-top: 10px;
+            gap: 20px!important;
+        }
+
+        
         
         a {
             transition: $common-transition;
@@ -51,13 +67,7 @@
 
         justify-content: space-between;
         gap: 0;
-        .nav-links {
-            display: none;
-        }
-
-        .nav-toggle {
-            display: block;
-        }
+        
     }
 
     .collapse,.collapsing {
