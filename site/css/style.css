@@ -260,7 +260,7 @@ body {
   list-style-type: none;
   gap: 50px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1110px) {
   .custom-nav .navbar-nav {
     gap: 90px;
   }
