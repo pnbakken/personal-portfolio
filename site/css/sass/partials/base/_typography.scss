@@ -48,14 +48,14 @@ a {
         color: $color-white;
         font-size: 18px!important;
     }
-    a.active {
-        color: $color-medium-blue;
-    }
-    a.brand-link {
+    // a.active {
+    //     color: $color-medium-blue;
+    // }
+    a.brand-link, a.nav-link {
         text-decoration: underline 2px transparent;
         text-underline-offset: 10px;
     }
-    a.brand-link.active {
+    a.brand-link.active, a.nav-link.active {
         text-decoration-color: $color-medium-blue;
         color: $color-white!important;
         

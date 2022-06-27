@@ -68,8 +68,12 @@
                             <a href="#contact" class="nav-link has-text" data-textname="navContact">Contact</a>
                         </li>
                     </ul>
-                    
-                    
+                    <div class="language-select">
+                        <div>
+                            <a href="./?lang=eng"><img src="./assets/icon/language/icons8-great-britain-48.png" alt="English" /></a> <a href="./?lang=nob"><img src="./assets/icon/language/icons8-norway-48.png" alt="Norsk" /></a>
+                        </div>
+                        <button class="discrete-button has-text" id="clear-language" value="Clear language selection" style="display:none;" data-textname="removeStoredLanguage">Clear language selection</button>
+                    </div>                   
                 </div> 
             </div> 
         </nav>
@@ -85,6 +89,54 @@
     
     <main>
         <div class="divider large-divider"></div>
+
+        <section id="services">
+            <h2 class="has-text" data-textname="servicesHeading">Services</h2>
+        
+            <div class="container services-container">
+
+                <div class=" container-item service-item" id="websites">
+                    <div class="service-content">
+                        <h3>Websites and applications</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
+                    </div> 
+                    <div class="service-icon"><img src="./assets/icon/services/icon-computer.svg" alt="websites and applications"/></div>
+                    
+                </div>
+
+                <div class=" container-item service-item" id="photography">
+                    <div class="service-content">
+                        <h3>Photography</h3>
+                    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
+                    </div>
+                    <div class="service-icon"><img src="./assets/icon/services/icon-photo.svg" alt="photography"/></div>
+                </div>
+
+                <div class=" container-item service-item" id="online-consulting">
+                    
+                    <div class="service-content">
+                        <h3>Online consulting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
+                    </div>
+                    <div class="service-icon"><img src="./assets/icon/services/icon-online.svg" alt="online consulting"/></div>
+                </div>
+               
+                <div class=" container-item service-item" id="authoring">
+                    
+                    <div class="service-content">
+                        <h3>Content Authoring</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
+                        
+                    </div>
+                    <div class="service-icon"><img src="./assets/icon/services/icon-copy.svg" alt="content authoring"/> </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
         <section id="projects">
 
             <h2 class="has-text" data-textname="projectsHeading">Projects</h2>
@@ -95,6 +147,32 @@
 
         <div class="divider"></div>
 
+        
+
+        <section id="about">
+            <h2 class="has-text" data-textname="aboutHeading">About me</h2>
+            <article class="container about-container">
+                <div class="about-content">
+                    <div class="bio-image"></div>
+                    <div class="bio-text">
+                        <h3>My headline here?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vel quasi dolorum ea laborum ratione, deleniti nam quidem eum quia consequatur repellendus, rerum saepe, debitis laudantium. Iure unde quasi quas?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quis perspiciatis doloribus dolore totam, provident rem, quasi nostrum tenetur dicta optio veritatis debitis! Corrupti molestiae totam adipisci sapiente eveniet debitis!</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="technologies">
+
+                <h2 class="has-text" data-textname="techsHeading">Technologies</h2>
+                <div class="container skills-container"></div>
+                    
+            </article>
+    
+        </section>
+        
+        <div class="divider"></div>
+        
         <section id="contact">
             <h2 class="has-text" data-textname="contactHeading">Contact me</h2>
             <div class="contact-group">
@@ -133,6 +211,9 @@
                         <li>
                             <a class="social-link" href="https://www.instagram.com/pnbakken/"><img class="social-icon" src="./assets/icon/social/awesome-instagram.svg" alt="linkedin" /> <span class="icon-text">Instagram</span></a>
                         </li>
+                        <li>
+                            <a class="social-link" href="mailto:contact@pnbakken.no"><img class="social-icon" src="./assets/icon/social/icon-email.svg" /> <span class="icon-text">contact@pnbakken.no</span> </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -140,83 +221,17 @@
 
         <div class="divider"></div>
 
-        <section id="about">
-            <h2 class="has-text" data-textname="aboutHeading">About me</h2>
-            <article class="container about-container">
-                <div class="about-content">
-                    <div class="bio-image"></div>
-                    <div class="bio-text">
-                        <h3>My headline here?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vel quasi dolorum ea laborum ratione, deleniti nam quidem eum quia consequatur repellendus, rerum saepe, debitis laudantium. Iure unde quasi quas?</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quis perspiciatis doloribus dolore totam, provident rem, quasi nostrum tenetur dicta optio veritatis debitis! Corrupti molestiae totam adipisci sapiente eveniet debitis!</p>
-                    </div>
-                </div>
-            </article>
-
-            <article id="technologies">
-
-                <h2 class="has-text" data-textname="techsHeading">Technologies</h2>
-                <div class="container skills-container"></div>
-                    
-            </article>
-    
-            <div class="divider"></div>
-        </section>
-        <div class="divider"></div>
-        <section id="services">
-            <h2 class="has-text" data-textname="servicesHeading">Services</h2>
-        
-            <div class="container services-container">
-
-                <div class=" container-item service-item" id="websites">
-                    <div class="service-content">
-                        <h3>Websites and applications</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
-                    </div> 
-                    <div class="service-icon"><img src="./assets/icon/services/icon-computer.svg" alt="websites and applications"/></div>
-                    
-                </div>
-
-                <div class=" container-item service-item" id="photography">
-                    <div class="service-content">
-                        <h3>Photography</h3>
-                    
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
-                    </div>
-                    <div class="service-icon"><img src="./assets/icon/services/icon-photo.svg" alt="photography"/></div>
-                </div>
-
-                <div class=" container-item service-item" id="online-consulting">
-                    
-                    <div class="service-content">
-                        <h3>Online consulting</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
-                    </div>
-                    <div class="service-icon"><img src="./assets/icon/services/icon-online.svg" alt="online consulting"/></div>
-                </div>
-               
-                <div class=" container-item service-item" id="copywriting">
-                    
-                    <div class="service-content">
-                        <h3>Copywriting</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis temporibus hic facilis nam cumque qui laboriosam cum non sed delectus facere commodi perspiciatis voluptas minima ut odit voluptates, voluptatibus ad.</p>
-                        
-                    </div>
-                    <div class="service-icon"><img src="./assets/icon/services/icon-copy.svg" alt="copywriting"/> </div>
-                </div>
-
-            </div>
-        </section>
     </main>
 
     <footer>
-        <div class="footer-links"></div><span class="footer-copy">&copy; 2022 Pål N. Bakken</span>
         <div class="language-select">
             <div>
                 <a href="./?lang=eng"><img src="./assets/icon/language/icons8-great-britain-48.png" alt="English" /></a> <a href="./?lang=nob"><img src="./assets/icon/language/icons8-norway-48.png" alt="Norsk" /></a>
             </div>
             <button class="discrete-button has-text" id="clear-language" value="Clear language selection" style="display:none;" data-textname="removeStoredLanguage">Clear language selection</button>
         </div>
+        
+        <div class="footer-links"><span class="has-text" data-textname="viewOnGH">View this site on</span> <a href="https://github.com/pnbakken/personal-portfolio">GitHub</a></div><span class="footer-copy">&copy; 2022 Pål N. Bakken</span>
     </footer>
 
     

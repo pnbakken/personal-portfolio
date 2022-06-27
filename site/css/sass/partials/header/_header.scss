@@ -50,5 +50,10 @@
         
         
     }
-
+    .language-select {
+        @media(min-width: 991px) {
+            display: none;
+        }
+        padding-bottom: 2em;
+    }
 }

@@ -5,6 +5,7 @@ export const languages = {
         navTechnologies: "Technologies",
         navContact: "Contact",
         navAbout: `About me`,
+        navServices: `Services`, 
 
         pageHeading: `Responsive, <span class="blue-text">elegant,</span> easy-to-use websites`, 
         bannerText: `Some parts of the website might still be unfinished or in the wrong place, and all the text needs rewriting.`,
@@ -38,6 +39,8 @@ export const languages = {
 
         pleaseWait: `Please wait`,
         genericError: `Something went wrong`,
+
+        viewOnGH: `View this site on `,
     },
 
     nob : {
@@ -46,6 +49,7 @@ export const languages = {
         navTechnologies: "Teknologi",
         navContact: "Ta kontakt",
         navAbout: `Om meg`, 
+        navServices: `Tjenester`,
 
         pageHeading: `Responsive, <span class="blue-text">elegante</span> nettsider som er enkle å bruke`, 
         bannerText: ` Noen deler av nettsiden er fremdeles uferdige eller på feil sted, i tillegg til at alle tekstene må skrives om.`,
@@ -80,5 +84,7 @@ export const languages = {
 
         pleaseWait: `Vennligst vent`,
         genericError: `Noe gikk galt`,
+
+        viewOnGH: `Se denne siden på  `,
     },
 };
