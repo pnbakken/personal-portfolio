@@ -39,6 +39,10 @@
         textarea {
             height:150px;
         }
+        button {
+            width : 70%;
+            background: $color-medium-blue;
+        }
     }
 
     .contact-social {
@@ -53,11 +57,17 @@
             flex-direction: column;
             gap: 30px;
             margin-top: 100px;
-    
+            
+            li {
+                display: flex;
+                align-items: flex-end;
+            }
             @media(max-width: 768px) {
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: flex-end;
+                align-items: center;
+                padding-left: 0!important;
                 gap: 40px;
                 margin-top: 0;
             }
@@ -76,6 +86,7 @@
                     }
                     img {
                         width: 40px;
+                        height: 40px;
                     }
                 }
             }

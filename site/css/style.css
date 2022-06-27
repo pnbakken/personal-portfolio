@@ -169,7 +169,7 @@ body {
 }
 
 .pseudo-button {
-  background: linear-gradient(#0C4869, 80%, #111120);
+  background: linear-gradient(#197aae, 80%, #0C4869);
   padding: 6px 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -181,8 +181,8 @@ body {
 }
 
 .pseudo-button:hover {
-  border-color: #fbfbff;
   color: #fbfbff;
+  background: #0C4869;
 }
 
 .discrete-button {
@@ -202,7 +202,7 @@ body {
 }
 
 .divider {
-  background: linear-gradient(#0C4869, 80%, #111120);
+  background: linear-gradient(#197aae, 80%, #0C4869);
   width: 75%;
   height: 5px;
   margin-top: 200px;
@@ -293,7 +293,11 @@ body {
 }
 .custom-nav .collapse, .custom-nav .collapsing {
   padding-left: 30px !important;
-  box-shadow: 3px 3px 3px #000;
+}
+@media (max-width: 991px) {
+  .custom-nav .collapse, .custom-nav .collapsing {
+    box-shadow: 3px 3px 3px #000;
+  }
 }
 
 .scrolling-nav {
@@ -547,6 +551,10 @@ body {
 .contact-group #contact-form textarea {
   height: 150px;
 }
+.contact-group #contact-form button {
+  width: 70%;
+  background: #197aae;
+}
 .contact-group .contact-social {
   display: flex;
   flex-direction: column;
@@ -560,11 +568,17 @@ body {
   gap: 30px;
   margin-top: 100px;
 }
+.contact-group .contact-social .social-links li {
+  display: flex;
+  align-items: flex-end;
+}
 @media (max-width: 768px) {
   .contact-group .contact-social .social-links {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 0 !important;
     gap: 40px;
     margin-top: 0;
   }
@@ -584,6 +598,7 @@ body {
   }
   .contact-group .contact-social .social-links a img {
     width: 40px;
+    height: 40px;
   }
 }
 
@@ -744,7 +759,7 @@ footer {
   padding: 2em 0;
   gap: 15px;
   margin-top: 200px;
-  background: linear-gradient(#0C4869, 80%, #111120);
+  background: linear-gradient(#197aae, 80%, #0C4869);
 }
 footer a {
   color: #fbfbff;

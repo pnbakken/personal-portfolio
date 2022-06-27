@@ -74,7 +74,9 @@
 
     .collapse,.collapsing {
         padding-left: 30px!important;
-        box-shadow: $common-shadow;
+        @media(max-width: 991px) {
+            box-shadow: $common-shadow;
+        }
     }
 
     
