@@ -7,8 +7,8 @@ export const languages = {
         navAbout: `About me`,
         navServices: `Services`, 
 
-        pageHeading: `Responsive, <span class="blue-text">elegant,</span> easy-to-use websites`, 
-        bannerText: `Some parts of the website might still be unfinished or in the wrong place, and all the text needs rewriting.`,
+        pageHeading: `Hi! I'm a student <span class="blue-text">front-end</span> developer!`, 
+        bannerText: `I really enjoy making good looking, responsive websites that are backed by robust code.<br>Until I finish my degree in December 2022, I'm open for any moderately sized assignment work. If you have a small business or design agency that could use website-related help, don't hesitate to contact me!`,
         bannerCTA: `Get in touch`,
 
         projectsHeading: `Projects`,
@@ -51,8 +51,8 @@ export const languages = {
         navAbout: `Om meg`, 
         navServices: `Tjenester`,
 
-        pageHeading: `Responsive, <span class="blue-text">elegante</span> nettsider som er enkle å bruke`, 
-        bannerText: ` Noen deler av nettsiden er fremdeles uferdige eller på feil sted, i tillegg til at alle tekstene må skrives om.`,
+        pageHeading: `Hei! Jeg er en snart ferdigstudert <span class="blue-text">frontend-</span>utvikler`, 
+        bannerText: `Jeg har det gøy når jeg lager pene, responsive nettsider som drives av solid kode. Frem til jeg avslutter en fagskolegrad i desember 2022 er jeg åpen for alle slags små og mellomstore oppdrag. Dersom du har en bedrift eller designbyrå som behøver nettside-relatert hjelp er det bare å kontake meg.`,
         bannerCTA: "Ta kontakt",
 
         projectsHeading: `Prosjekt`,
