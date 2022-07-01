@@ -3,14 +3,16 @@ import { fetchFromAPI } from "../tools/interfaceAPI.js";
 import { languages } from "../tools/languages/languages.js";
 import addLoader from "./display-utils/addLoader.js";
 import { createGenericErrorMessage } from "./display-utils/createMessage.js";
+import {projects} from "../data/data.js";
 
 export default async function displayProjects(lang="eng") {
     const target = document.querySelector(".projects-container");
     addLoader(target, lang);
 
-    const projects = await fetchFromAPI("api/projects");
+    //const projects = await fetchFromAPI("api/projects");
+    console.log(projects)
     if (projects) {
-        target.innerHTML = buildProjectList(projects.data, lang);
+        target.innerHTML = buildProjectList(projects, lang);
     } else {
         createGenericErrorMessage(target, lang);
     }
@@ -21,7 +23,7 @@ function buildProjectList(projects, lang) {
 
     let counter = 0;
     projects.forEach((project) => {
-        html += projectToHTML(project.attributes, counter);
+        html += projectToHTML(project, counter);
         counter++;
     });
     html += `<div class="container-item project-item" data-aos="fade-up" data-aos-duration="3000">
@@ -32,7 +34,7 @@ function buildProjectList(projects, lang) {
     return html;
 
     function projectToHTML(project, counter) {
-
+        console.log(project)
         const direction = (counter % 2 === 0) ? "down" : "up";
         const langDescription = `description_${lang}`;
         console.log(project);
