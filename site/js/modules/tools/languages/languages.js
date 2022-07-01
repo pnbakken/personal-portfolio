@@ -40,7 +40,7 @@ export const languages = {
         pleaseWait: `Please wait`,
         genericError: `Something went wrong`,
 
-        viewOnGH: `View this site on `,
+        viewOnGH: `View on`,
     },
 
     nob : {
@@ -52,14 +52,14 @@ export const languages = {
         navServices: `Tjenester`,
 
         pageHeading: `Hei! Jeg er en snart ferdigstudert <span class="blue-text">frontend-</span>utvikler`, 
-        bannerText: `Jeg har det gøy når jeg lager pene, responsive nettsider som drives av solid kode. Frem til jeg avslutter en fagskolegrad i desember 2022 er jeg åpen for alle slags små og mellomstore oppdrag. Dersom du har en bedrift eller designbyrå som behøver nettside-relatert hjelp er det bare å kontake meg.`,
+        bannerText: `Jeg *hmm* liker *hmm* å lage pene, responsive nettsider som drives av solid kode. Frem til jeg avslutter en fagskolegrad i desember 2022 er jeg åpen for alle slags små og mellomstore oppdrag. Dersom du har en bedrift eller designbyrå som behøver nettside-relatert hjelp er det *hmm* bare å ta kontakt *hmm.`,
         bannerCTA: "Ta kontakt",
 
         projectsHeading: `Prosjekt`,
         visit: `Besøk`,
         githubLink: `Se på GitHub`,
         yourProject: `Ditt prosjekt her?`,
-        projectCall: `Ta kontakt for en samtale om hvordan jeg kan finne den beste løsningen for deg`,
+        projectCall: `Ta kontakt for en samtale om hvordan vi kan finne gode løsninger, sammen.`,
 
         contactHeading: `Kontakt meg`,
 
@@ -85,6 +85,6 @@ export const languages = {
         pleaseWait: `Vennligst vent`,
         genericError: `Noe gikk galt`,
 
-        viewOnGH: `Se denne siden på  `,
+        viewOnGH: `Se på`,
     },
 };
