@@ -3,7 +3,7 @@ import { fetchFromAPI } from "../tools/interfaceAPI.js";
 import { languages } from "../tools/languages/languages.js";
 import addLoader from "./display-utils/addLoader.js";
 import { createGenericErrorMessage } from "./display-utils/createMessage.js";
-import {projects} from "../data/data.js";
+import {projects} from "../dataset/data.js";
 
 export default async function displayProjects(lang="eng") {
     const target = document.querySelector(".projects-container");
