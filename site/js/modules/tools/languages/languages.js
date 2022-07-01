@@ -15,7 +15,7 @@ export const languages = {
         visit: `Visit`,
         githubLink: `See on GitHub`,
         yourProject: `Your project here?`,
-        projectCall: `Get in touch for a conversation about how I can find the best solution for you.`,
+        projectCall: `Lets have a talk about how we can find good solutions, together.`,
 
         contactHeading: `Contact me`,
 

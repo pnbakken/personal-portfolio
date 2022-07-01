@@ -26,10 +26,10 @@ function buildProjectList(projects, lang) {
         html += projectToHTML(project, counter);
         counter++;
     });
-    html += `<div class="container-item project-item" data-aos="fade-up" data-aos-duration="3000">
+    html += `<div class="container-item project-item project-call-item" data-aos="fade-up" data-aos-duration="3000">
                 <h3 class="has-text">${languages[lang].yourProject}</h3>
-                <p class="has-text" data-textname="projectCall">${languages[lang].projectCall}</p>
                 <a class="pseudo-button has-text" data-textname="bannerCTA" href="#contact">${languages[lang].bannerCTA}</a>
+                <p class="has-text" data-textname="projectCall">${languages[lang].projectCall}</p>
             </div>`;
     return html;
 

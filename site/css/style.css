@@ -465,6 +465,11 @@ body {
   visibility: visible;
 }
 
+.project-call-item {
+  text-align: center;
+  justify-content: flex-end;
+}
+
 .project-item:hover .project-details {
   opacity: 1;
 }
