@@ -181,8 +181,8 @@ body {
 }
 
 .pseudo-button:hover {
-  color: #fbfbff;
-  background: #0C4869;
+  color: #fbfbff !important;
+  box-shadow: 3px 3px 3px #000;
 }
 
 .discrete-button {

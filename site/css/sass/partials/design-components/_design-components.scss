@@ -10,9 +10,8 @@
     color: $color-white;
 }
 .pseudo-button:hover {
-    
-    color: $color-white;
-    background: $color-dark-blue;
+    color: $color-white!important;
+    box-shadow: $common-shadow;
 }
 
 .discrete-button {

@@ -7,6 +7,7 @@ export const projects = [
          "image_url": "",
          "project_url": "",
          "github_url": "",
+         "skills": []
      }, */
 
      {
@@ -22,8 +23,8 @@ export const projects = [
     {
         "id": 1,
         "name": "In Bloom",
-        "description_eng": "Mock-up e-commerce storefront for an imagined florist's. Uses Strapi backend running on Heroku. Contains a simulated shopping cart, as well as an admin back-end for creating and editing products.",
-        "description_nob": "",
+        "description_eng": "End of 3rd semester project. Mock-up e-commerce storefront for an imagined online flower shop. Uses Strapi hosted on Heroku. Contains a simulated shopping cart, as well as an authenticated admin section for creating and editing products.",
+        "description_nob": "Avsluttende prosjekt for 3. semester. Enkel nettbutikk front for en blomster-nettbutikk. Bruker Strapi som kjører på Heroku. Har en autentisert admin-seksjon for å endre eller legge til produkter.",
         "image_url": "https://res.cloudinary.com/dt8j2ptfq/image/upload/v1655303981/portfolio/projects/in-bloom_zrgdbu.png",
         "project_url": "https://flowersinbloom.netlify.app/",
         "github_url": "https://github.com/pnbakken/semester-project2",
