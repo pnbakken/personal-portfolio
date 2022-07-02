@@ -15,7 +15,7 @@ export const projects = [
          "name": "Quizify",
          "description_eng": "Simple quiz app made with React",
          "description_nob": "Enkel quiz-applikasjon lagd med React",
-         "image_url": "https://res.cloudinary.com/dt8j2ptfq/image/upload/v1656674682/portfolio/projects/quizify-project-shot_rgg8zf.png",
+         "image_url": "https://res.cloudinary.com/dt8j2ptfq/image/upload/v1656758146/portfolio/projects/quizify-project-shot_atoxbb.png",
          "project_url": "https://pnbakken.no/quizify",
          "github_url": "https://github.com/pnbakken/quizify",
      },
