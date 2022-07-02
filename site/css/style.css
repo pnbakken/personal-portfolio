@@ -479,7 +479,7 @@ body {
 }
 
 .skills-container {
-  width: 45%;
+  width: 80%;
   max-width: 700px;
 }
 @media (max-width: 1024px) {
@@ -494,7 +494,7 @@ body {
 }
 @media (max-width: 500px) {
   .skills-container {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -592,7 +592,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding-left: 0 !important;
-    gap: 40px;
+    gap: 30px;
     margin-top: 0;
   }
 }

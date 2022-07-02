@@ -8,7 +8,7 @@ export const languages = {
         navServices: `Services`, 
 
         pageHeading: `Hi! I'm a student <span class="blue-text">front-end</span> developer!`, 
-        bannerText: `I really enjoy making good looking, responsive websites that are backed by solid code.`,
+        bannerText: `I really enjoy making good looking, responsive websites that are backed by solid code that works.`,
         bannerCTA: `Get in touch`,
 
         projectsHeading: `Projects`,
@@ -54,7 +54,7 @@ export const languages = {
         navServices: `Tjenester`,
 
         pageHeading: `Hei! Jeg er en snart ferdigstudert <span class="blue-text">frontend-</span>utvikler`, 
-        bannerText: `Jeg *hmm* liker *hmm* å lage pene, responsive nettsider som drives av solid kode.`,
+        bannerText: `Jeg *hmm* liker *hmm* å lage pene, responsive nettsider som drives av solid kode som virker.`,
         bannerCTA: "Ta kontakt",
 
         projectsHeading: `Prosjekt`,
