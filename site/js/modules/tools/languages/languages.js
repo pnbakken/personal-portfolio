@@ -1,5 +1,7 @@
 export const languages = {
     eng : {
+
+        // Header section
         navHome: "Home",
         navWork: "Projects", 
         navTechnologies: "Technologies",
@@ -11,12 +13,15 @@ export const languages = {
         bannerText: `I really enjoy making good looking, responsive websites that are backed by solid code that works.`,
         bannerCTA: `Get in touch`,
 
+        // Projects section
         projectsHeading: `Projects`,
         visit: `Visit`,
         githubLink: `See on GitHub`,
         yourProject: `Your project here?`,
         projectCall: `Lets have a talk about how we can find good solutions, together.`,
 
+
+        // Contact section
         contactHeading: `Contact me`,
 
         contactFormHeading: `Send me a message`,
@@ -29,11 +34,19 @@ export const languages = {
 
         socialHeading: `Find me other places`,
 
+
+        // About section
         aboutHeading: `About me`,
 
         techsHeading: `Technologies`,
 
+        // Services section
         servicesHeading:`Services`,
+        websitesServiceHeading: `Nettsider og applikasjoner`,
+
+
+
+        // Miscellaneous system text 
         removeStoredLanguage: `Clear stored language selection`,
         languageRemoved: `Language selection cleared`,
 
