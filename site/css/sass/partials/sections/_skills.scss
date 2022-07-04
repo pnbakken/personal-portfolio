@@ -1,6 +1,7 @@
 .skills-container {
     width: 80%;
-    max-width: 700px;
+    max-width: 800px!important;
+    gap: 1em!important;
     @media(max-width: 1024px) {
         width: 70%;
     }
