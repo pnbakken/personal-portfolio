@@ -30,7 +30,7 @@ export const languages = {
         contactSubject: `Message subject`,
         messageText: `Your message`,
         sendButton: `Send message`,
-        formNotActive: `The form is currently disabled`,
+        formNotActive: `The form is currently not active`,
 
         socialHeading: `Find me other places`,
 
@@ -43,7 +43,7 @@ export const languages = {
         // Services section
         servicesHeading:`Services`,
         websitesServiceHeading: `Nettsider og applikasjoner`,
-
+        websitesServiceOpener: `A website should be the cornerstone of your online presence.`,
 
 
         // Miscellaneous system text 
@@ -59,6 +59,7 @@ export const languages = {
     },
 
     nob : {
+        // Header section
         navHome: "Hjem",
         navWork: "Prosjekt", 
         navTechnologies: "Teknologi",
@@ -70,12 +71,15 @@ export const languages = {
         bannerText: `Jeg *hmm* liker *hmm* å lage pene, responsive nettsider som drives av solid kode som virker.`,
         bannerCTA: "Ta kontakt",
 
+        // Projects section
         projectsHeading: `Prosjekt`,
         visit: `Besøk`,
         githubLink: `Se på GitHub`,
         yourProject: `Ditt prosjekt her?`,
         projectCall: `Ta kontakt for en samtale om hvordan vi kan finne gode løsninger, sammen.`,
 
+
+        // Contact section
         contactHeading: `Kontakt meg`,
 
         contactFormHeading: `Send meg en melding`,
@@ -88,12 +92,20 @@ export const languages = {
 
         socialHeading: `Finn meg andre steder`,
 
+
+        // About section
         aboutHeading: `Om meg`,
 
         techsHeading: `Teknologi`,
 
+
+        // Services section
         servicesHeading:`Tjenester`,
 
+        websitesServiceHeading: `Nettsider og applikasjoner`,
+        websitesServiceOpener: `En nettside burde være fundamentet i din online tilstedeværelse.`,
+        
+        // Miscellaneous system text 
         removeStoredLanguage: `Fjern lagret språkvalg`,
         languageRemoved: `Språkvalg fjernet`,
 

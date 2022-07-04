@@ -222,6 +222,10 @@ body {
   z-index: 1;
 }
 
+.message {
+  align-self: center;
+}
+
 .custom-nav {
   display: flex;
   gap: 100px;
@@ -734,7 +738,7 @@ body {
   .services-container .service-item#online-consulting {
     background: #0C4869;
   }
-  .services-container .service-item#copywriting {
+  .services-container .service-item#authoring {
     background: #4A6D80;
   }
 }
