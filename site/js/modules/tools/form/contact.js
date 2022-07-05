@@ -16,6 +16,7 @@ function validateForm(form) {
     console.log("Validating form...");
     let valid = true;
     $all("input, textarea", form).forEach( (input) => {
+
         if(!input.value.trim()) {
             console.log(input);
             input.classList.toggle("input-error");
@@ -23,7 +24,7 @@ function validateForm(form) {
             console.log(input + " invalid");
         }
     });
-
+    return valid;
 }
 
 function packageForm(form) {
