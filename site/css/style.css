@@ -226,6 +226,10 @@ body {
   align-self: center;
 }
 
+.input-error {
+  border-color: #B1060F !important;
+}
+
 .custom-nav {
   display: flex;
   gap: 100px;
@@ -564,7 +568,7 @@ body {
 }
 .contact-group #contact-form input, .contact-group #contact-form textarea {
   background: #383844;
-  border: none;
+  border: 2px solid #111120;
   color: #fbfbff;
 }
 .contact-group #contact-form textarea {
