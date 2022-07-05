@@ -320,6 +320,7 @@ body {
   padding-bottom: 10px !important;
   transition: 0.5s ease;
   margin-top: 0;
+  box-shadow: 3px 3px 3px #000;
 }
 .scrolling-nav .show {
   background: #111120;
