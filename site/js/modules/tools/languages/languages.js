@@ -111,8 +111,8 @@ export const languages = {
         navAbout: `Om meg`, 
         navServices: `Tjenester`,
 
-        pageHeading: `Hei! Jeg er en snart ferdigstudert <span class="blue-text">frontend-</span>utvikler`, 
-        bannerText: `Jeg *hmm* liker *hmm* å lage pene, responsive nettsider som drives av solid kode som virker.`,
+        pageHeading: `Hei! Jeg er en studerende <span class="blue-text">frontend-</span>utvikler!`, 
+        bannerText: `Jeg liker å lage pene, responsive nettsider som drives av solid kode.`,
         bannerCTA: "Ta kontakt",
 
         // Projects section
@@ -168,7 +168,7 @@ export const languages = {
                                 Høyoppløselige bilder i god kvalitet til bruk på skjerm eller trykk.
                             </li>
                             <li>
-                                Hva jeg kan tilby kan være avhengig av fysiske avstander. Ta kontakt for en nærmere prat.
+                                Hva jeg tilbyr kan være avhengig av fysiske avstander. Ta kontakt for en nærmere prat.
                             </li>`,
 
         consultingServiceHeading: `Onlinekonsultering`,
