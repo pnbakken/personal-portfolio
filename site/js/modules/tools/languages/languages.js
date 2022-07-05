@@ -43,9 +43,48 @@ export const languages = {
         // Services section
         servicesHeading:`Services`,
         websitesServiceHeading: `Nettsider og applikasjoner`,
-        websitesServiceOpener: `A website should be the cornerstone of your online presence.`,
+        websitesTextList: `<li>
+                                I use HTML, CSS, and JavaScript, and other frameworks to build websites from the ground up.
+                            </li>
+                            <li>
+                                I can design your website, or build one based on existing designs.
+                            </li>
+                            <li>
+                                Simple information pages, or larger systems with custom made admin-tools and databases.
+                            </li>`,
 
+        photographyTextList: `<li>
+                                Product photography.
+                            </li>
+                            <li>
+                                Mood-setting stock photography.
+                            </li>
+                            <li>
+                                High quality, high-resolution photographs for use online and in print.
+                            </li>
+                            <li>
+                                Location-dependent service. Get in touch to discuss further.
+                            </li>`,
+        consultingTextList: `<li>
+                                Help map and formulate your needs in terms of design and technical requirements.
+                            </li>
+                            <li>
+                                Help with SEO and Google rankings.
+                            </li>
+                            <li>
+                                Meta content and keywords. WCAG standards.
+                            </li>`,
+        contentTextList: `<li>
+                                Blog posts, short texts, etc.
+                            </li>
+                            <li>
+                                Social media content.
+                            </li>
+                            <li>
+                                I also offer editing, translation, and proofreading services. Fluently bilingual in English and Norwegian.
+                            </li>`,
 
+                        
         // Miscellaneous system text 
         removeStoredLanguage: `Clear stored language selection`,
         languageRemoved: `Language selection cleared`,
@@ -103,8 +142,46 @@ export const languages = {
         servicesHeading:`Tjenester`,
 
         websitesServiceHeading: `Nettsider og applikasjoner`,
-        websitesServiceOpener: `En nettside burde være fundamentet i din online tilstedeværelse.`,
-        
+        websitesTextList: `<li>
+                                Jeg bruker HTML, CSS, JavaScript og andre rammeverk til å lage nettsider fra bunnen av.
+                            </li>
+                            <li>
+                                Jeg kan designe siden din, eller lage en side basert på eksisterende tegninger.
+                            </li>
+                            <li>
+                                 Enkle informasjonssider, eller større systemer med skreddersydd administrasjonstilgang og databaser.
+                            </li>`,
+        photographyTextList: `<li>
+                                Produktfotografi.
+                            </li>
+                            <li>
+                                Stemningssettende illustrasjonsfotografi.
+                            </li>
+                            <li>
+                                Høyoppløselige bilder i god kvalitet til bruk på skjerm eller trykk.
+                            </li>
+                            <li>
+                                Hva jeg kan tilby kan være avhengig av fysiske avstander. Ta kontakt for en nærmere prat.
+                            </li>`,
+        consultingTextList: `<li>
+                                Hjelp til å kartlegge og formulere dine behov innefor design og tekniske krav.
+                            </li>
+                            <li>
+                                Hjelp med SEO og Google ranking.
+                            </li>
+                            <li>
+                             Meta-innhold og nøkkelord. WCAG standarder.
+                            </li>`,
+        contentTextList: `<li>
+                                Blogginnlegg, kortere tekster, osv.
+                            </li>
+                            <li>
+                                Innhold til sosiale medier.
+                            </li>
+                            <li>
+                                Jeg tilbyr også redigering, korrekturlesing, og oversetting. Flytende tospråklig i norsk og engelsk.
+                            </li>`,
+
         // Miscellaneous system text 
         removeStoredLanguage: `Fjern lagret språkvalg`,
         languageRemoved: `Språkvalg fjernet`,
