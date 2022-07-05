@@ -53,6 +53,7 @@ export const languages = {
                                 Simple information pages, or larger systems with custom made admin-tools and databases.
                             </li>`,
 
+        photographyServiceHeading: `Photography`,
         photographyTextList: `<li>
                                 Product photography.
                             </li>
@@ -65,6 +66,8 @@ export const languages = {
                             <li>
                                 Location-dependent service. Get in touch to discuss further.
                             </li>`,
+
+        consultingServiceHeading: `Online consulting`,
         consultingTextList: `<li>
                                 Help map and formulate your needs in terms of design and technical requirements.
                             </li>
@@ -74,6 +77,8 @@ export const languages = {
                             <li>
                                 Meta content and keywords. WCAG standards.
                             </li>`,
+
+        contentServiceHeading: `Content authoring`,
         contentTextList: `<li>
                                 Blog posts, short texts, etc.
                             </li>
@@ -151,6 +156,8 @@ export const languages = {
                             <li>
                                  Enkle informasjonssider, eller større systemer med skreddersydd administrasjonstilgang og databaser.
                             </li>`,
+        
+        photographyServiceHeading: `Fotografering`,
         photographyTextList: `<li>
                                 Produktfotografi.
                             </li>
@@ -163,6 +170,8 @@ export const languages = {
                             <li>
                                 Hva jeg kan tilby kan være avhengig av fysiske avstander. Ta kontakt for en nærmere prat.
                             </li>`,
+
+        consultingServiceHeading: `Onlinekonsultering`,
         consultingTextList: `<li>
                                 Hjelp til å kartlegge og formulere dine behov innefor design og tekniske krav.
                             </li>
@@ -172,6 +181,7 @@ export const languages = {
                             <li>
                              Meta-innhold og nøkkelord. WCAG standarder.
                             </li>`,
+        contentServiceHeading: `Tekstforfatting`,
         contentTextList: `<li>
                                 Blogginnlegg, kortere tekster, osv.
                             </li>
