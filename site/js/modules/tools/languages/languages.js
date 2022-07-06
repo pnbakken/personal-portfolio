@@ -31,7 +31,7 @@ export const languages = {
         messageText: `Your message`,
         sendButton: `Send message`,
         formNotActive: `The form is currently not active`,
-
+        missingInput: `It seems you are missing one or more required inputs.`,
         socialHeading: `Find me other places`,
 
 
