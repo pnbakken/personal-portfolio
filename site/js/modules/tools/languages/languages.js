@@ -133,7 +133,7 @@ export const languages = {
         messageText: `Din melding`,
         sendButton: `Send melding`,
         formNotActive: `Skjemaet er foreløpig deaktivert`,
-
+        missingInput: `Det ser ut som du mangler en eller flere påkrevde felt.`,
         socialHeading: `Finn meg andre steder`,
 
 

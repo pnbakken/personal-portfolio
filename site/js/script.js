@@ -34,7 +34,7 @@ activeNavbar();
 
     displayProjects(lang);
     displaySkills(lang);
-    
+    contactForm(lang);
 })();
 
 

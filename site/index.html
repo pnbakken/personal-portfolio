@@ -225,11 +225,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="subject" class="form-label has-text" data-textname="contactSubject">Message subject</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" id="subject" placeholder="">
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label has-text" data-textname="messageText">Your message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id=",message-text" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
                         <button type="submit" id="submit-message" class="form-button pseudo-button has-text" data-textName="sendButton">Send</button>
@@ -264,9 +264,12 @@
                 <div class="about-content">
                     <div class="bio-image"></div>
                     <div class="bio-text">
-                        <h3>My headline here?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vel quasi dolorum ea laborum ratione, deleniti nam quidem eum quia consequatur repellendus, rerum saepe, debitis laudantium. Iure unde quasi quas?</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quis perspiciatis doloribus dolore totam, provident rem, quasi nostrum tenetur dicta optio veritatis debitis! Corrupti molestiae totam adipisci sapiente eveniet debitis!</p>
+                        <h3>Pål Nicholas Bakken</h3>
+                        <div class="has-text" data-textname="bioText">
+                            <p>
+                                My name's Pål, and I'm a front-end developer who likes working with code to create beautiful web applications 
+                            </p>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -298,23 +301,19 @@
     </footer>
 
 
-    <!--
-        EmailJS
-    -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('cibPmAOS0OFS_XP0F');
-        })();
-    </script>
+ 
     
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script type="module" src="./js/script.js"></script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 <!--
