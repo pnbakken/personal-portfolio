@@ -32,7 +32,7 @@
     background: $color-blue-gradient;
     width: 75%;
     height: 5px;
-    margin-top: 200px;
+    margin-top: 150px;
     
     border-radius: 0.4rem;
     box-shadow: $common-shadow;
@@ -51,4 +51,11 @@
 
 .input-error{
     border-color: $color-red!important;
+}
+
+.page-copy {
+    align-self: center;
+    justify-self: center;
+    margin-top: 100px;
+    
 }

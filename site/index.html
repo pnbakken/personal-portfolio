@@ -116,7 +116,7 @@
                                     I can design your website, or build one based on existing designs.
                                 </li>
                                 <li>
-                                    Simple information pages, or larger systems with custom made admin-tools and databases.
+                                    Static pages, one-pagers, or larger systems with custom made admin-tools and databases.
                                 </li>
                             </ul>
                         </div>
@@ -217,7 +217,6 @@
                     <div class="mb-3">
                         <label for="email" class="form-label has-text" data-textname="contactEmail">Email address</label>
                         <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                        <div class="message input-message has-text" data-textname="emailInputMessage" style="display: none;">You must enter an email address.</div>
                     </div>
                     <div class="mb-3">
                         <label for="name" class="form-label has-text" data-textname="contactName">Your name</label>
@@ -232,9 +231,10 @@
                         <textarea class="form-control" id="message-text" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
+                        <div id="form-message"></div>
                         <button type="submit" id="submit-message" class="form-button pseudo-button has-text" data-textName="sendButton">Send</button>
                     </div>  
-                    <div id="form-message"></div>
+                    
                 </form>
                 <div class="contact-social">
                    
@@ -263,12 +263,16 @@
             <article class="container about-container">
                 <div class="about-content">
                     <div class="bio-image"></div>
-                    <div class="bio-text">
-                        <h3>Pål Nicholas Bakken</h3>
-                        <div class="has-text" data-textname="bioText">
-                            <p>
-                                My name's Pål, and I'm a front-end developer who likes working with code to create beautiful web applications 
-                            </p>
+                    <div class="bio-text has-text" data-textname="bioText">
+                        <p>
+                            Hi, I'm Pål and I'm studying for a degree in front-end development, currently on track to graduate in December 2022.
+                        </p> 
+                        <p>
+                            Until then I'm open for projects or part-time work on anything within my field, but I'm always interested to hear about more long-term job opportunities as well.
+                        </p>
+                        <p>
+                            More content to come...
+                        </p>
                         </div>
                     </div>
                 </div>
@@ -286,9 +290,9 @@
         <div class="divider"></div>
         
         
-
+        <div class="page-copy">&copy; 2022 Pål N. Bakken</span>
     </main>
-
+    
     <footer>
         <div class="language-select">
             <div>
@@ -297,7 +301,7 @@
             <button class="discrete-button has-text" id="clear-language" value="Clear language selection" style="display:none;" data-textname="removeStoredLanguage">Clear language selection</button>
         </div>
         
-        <div class="footer-links"><span class="has-text" data-textname="viewOnGH">View this site on</span> <a href="https://github.com/pnbakken/personal-portfolio">GitHub</a></div><span class="footer-copy">&copy; 2022 Pål N. Bakken</span>
+        <div class="footer-links"><span class="has-text" data-textname="viewOnGH">View this site on</span> <a href="https://github.com/pnbakken/personal-portfolio">GitHub</a></div>
     </footer>
 
 
@@ -315,8 +319,4 @@
 
     <script type="module" src="./js/script.js"></script>
 </body>
-
-<!--
-    <p>Having a space custom built to suit <i>your</i> needs, whether a simple information display page like this one, or a complicated 1000 page ecosystem; a tailor made website gives your online presence a credibility that social media pages alone cannot provide.</p>
--->
 </html>

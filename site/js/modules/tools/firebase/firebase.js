@@ -1,7 +1,7 @@
  // Import the functions you need from the SDKs you need
 
  import {initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
- import {getFirestore, doc, addDoc, collection} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js";
+ import {getFirestore, addDoc, collection} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js";
 
  // TODO: Add SDKs for Firebase products that you want to use
 
@@ -32,11 +32,12 @@
  export const app = initializeApp(firebaseConfig);
  export const firestore = getFirestore(app);
 
+
  export async function sendMessageToFirebase(message) {
-   
-    return await sendToFirebase(message, "contact_message");
+   return await sendToFirebase(message, "contact_message");
  }
- export async function sendToFirebase(objectToSend, target) {
+
+ async function sendToFirebase(objectToSend, target) {
     console.log("Sending data...");
     try {
         const docRef = await addDoc(collection(firestore, target), objectToSend);

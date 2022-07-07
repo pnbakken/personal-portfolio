@@ -18,7 +18,7 @@ export const languages = {
         visit: `Visit`,
         githubLink: `See on GitHub`,
         yourProject: `Your project here?`,
-        projectCall: `Lets have a talk about how we can find good solutions, together.`,
+        projectCall: `Lets have a talk about what we can do together.`,
 
 
         // Contact section
@@ -39,6 +39,15 @@ export const languages = {
 
         // About section
         aboutHeading: `About me`,
+        bioText: ` <p>
+                        Hi, I'm Pål and I'm studying for a degree in front-end development, currently on track to graduate in December 2022.
+                    </p> 
+                    <p>
+                        Until then I'm mostly open for projects or part-time work on anything within my field, but I'm always interested to hear about more long-term job opportunities as well.
+                    </p>
+                    <p>
+                        More content to come...
+                    </p>`,
 
         techsHeading: `Technologies`,
 
@@ -52,7 +61,7 @@ export const languages = {
                                 I can design your website, or build one based on existing designs.
                             </li>
                             <li>
-                                Simple information pages, or larger systems with custom made admin-tools and databases.
+                                Static pages, one-pagers, or larger systems with custom made admin-tools and databases.
                             </li>`,
 
         photographyServiceHeading: `Photography`,
@@ -101,7 +110,7 @@ export const languages = {
 
         viewOnGH: `View on`,
 
-        // Until I finish my degree in December 2022, I'm open for any moderately sized assignment work. If you have a small business or design agency that could use website-related help, don't hesitate to contact me!
+        
     },
 
     nob : {
@@ -122,7 +131,7 @@ export const languages = {
         visit: `Besøk`,
         githubLink: `Se på GitHub`,
         yourProject: `Ditt prosjekt her?`,
-        projectCall: `Ta kontakt for en samtale om hvordan vi kan finne gode løsninger, sammen.`,
+        projectCall: `La oss ta en prat om hva vi kan få til, sammen.`,
 
 
         // Contact section
@@ -144,6 +153,15 @@ export const languages = {
 
         // About section
         aboutHeading: `Om meg`,
+        bioText: `<p>
+                   Hei, jeg heter Pål og jeg studerer til en fagskolegrad innenfor frontend-utvikling, foreløpig i rute til å bli ferdig i desember 2022.
+                   </p>
+                   <p>
+                   Frem til da er jeg åpen for moderate jobber eller deltids-arbeid. På lengre sikt er jeg alltid interessert i å høre om spennende jobbmuligheter.
+                </p>
+                <p>
+                Mer innhold vil komme på siden etterhvert...
+                </p>`,
 
         techsHeading: `Teknologi`,
 
@@ -159,7 +177,7 @@ export const languages = {
                                 Jeg kan designe siden din, eller lage en side basert på eksisterende tegninger.
                             </li>
                             <li>
-                                 Enkle informasjonssider, eller større systemer med skreddersydd administrasjonstilgang og databaser.
+                                 Statiske sider, én-sidere, eller større systemer med skreddersydd administrasjonstilgang og databaser.
                             </li>`,
         
         photographyServiceHeading: `Fotografering`,
@@ -167,13 +185,13 @@ export const languages = {
                                 Produktfotografi.
                             </li>
                             <li>
-                                Stemningssettende illustrasjonsfotografi.
+                                Stemningsskapende illustrasjonsfotografi.
                             </li>
                             <li>
                                 Høyoppløselige bilder i god kvalitet til bruk på skjerm eller trykk.
                             </li>
                             <li>
-                                Hva jeg tilbyr kan være avhengig av fysiske avstander. Ta kontakt for en nærmere prat.
+                                Hva jeg tilbyr er avhengig av fysiske avstander. Ta kontakt for en nærmere prat.
                             </li>`,
 
         consultingServiceHeading: `Onlinekonsultering`,
@@ -206,6 +224,6 @@ export const languages = {
 
         viewOnGH: `Se på`,
 
-        // Frem til jeg avslutter en fagskolegrad i desember 2022 er jeg åpen for alle slags små og mellomstore oppdrag. Dersom du har en bedrift eller designbyrå som behøver nettside-relatert hjelp er det *hmm* bare å ta kontakt *hmm.
+        
     },
 };
