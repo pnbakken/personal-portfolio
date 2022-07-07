@@ -10,7 +10,7 @@ export const languages = {
         navServices: `Services`, 
 
         pageHeading: `Hi! I'm a student <span class="blue-text">front-end</span> developer!`, 
-        bannerText: `I really enjoy making good looking, responsive websites that are backed by solid code that works.`,
+        bannerText: `I enjoy making good looking, responsive websites that are backed by solid code that works.`,
         bannerCTA: `Get in touch`,
 
         // Projects section
@@ -55,13 +55,13 @@ export const languages = {
         servicesHeading:`Services`,
         websitesServiceHeading: `Nettsider og applikasjoner`,
         websitesTextList: `<li>
-                                I use HTML, CSS, and JavaScript, and other frameworks to build websites from the ground up.
+                                I use HTML, CSS, JavaScript, and other frameworks to build websites from the ground up.
                             </li>
                             <li>
                                 I can design your website, or build one based on existing designs.
                             </li>
                             <li>
-                                Static pages, one-pagers, or larger systems with custom made admin-tools and databases.
+                                Static pages, one-pagers, or larger systems with custom made admin tools and databases.
                             </li>`,
 
         photographyServiceHeading: `Photography`,
@@ -157,7 +157,7 @@ export const languages = {
                    Hei, jeg heter Pål og jeg studerer til en fagskolegrad innenfor frontend-utvikling, foreløpig i rute til å bli ferdig i desember 2022.
                    </p>
                    <p>
-                   Frem til da er jeg åpen for moderate jobber eller deltids-arbeid. På lengre sikt er jeg alltid interessert i å høre om spennende jobbmuligheter.
+                   Frem til da er jeg åpen for moderate jobber eller deltidsarbeid. På lengre sikt er jeg alltid interessert i å høre om spennende jobbmuligheter.
                 </p>
                 <p>
                 Mer innhold vil komme på siden etterhvert...
