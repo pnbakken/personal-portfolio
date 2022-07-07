@@ -32,6 +32,8 @@ export const languages = {
         sendButton: `Send message`,
         formNotActive: `The form is currently not active`,
         missingInput: `It seems you are missing one or more required inputs.`,
+        sending: `Sending...`,
+        messageSuccess: `Your message was delivered successfully!`,
         socialHeading: `Find me other places`,
 
 
@@ -133,7 +135,10 @@ export const languages = {
         messageText: `Din melding`,
         sendButton: `Send melding`,
         formNotActive: `Skjemaet er foreløpig deaktivert`,
-        missingInput: `Det ser ut som du mangler en eller flere påkrevde felt.`,
+        missingInput: `Det ser ut som du mangler ett eller flere påkrevde felt.`,
+        sending: `Sender...`,
+        messageSuccess: `Meldingen din ble sendt!`,
+
         socialHeading: `Finn meg andre steder`,
 
 

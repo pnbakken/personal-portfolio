@@ -1,17 +1,21 @@
 import { createMessage } from "../../display/display-utils/createMessage.js";
 import {$, $all} from "../helpers/domSelector.js";
-import { app, db } from "../firebase/firebase.js";
+import { sendMessageToFirebase } from "../firebase/firebase.js";
 import { languages } from "../languages/languages.js";
 
-export default function contactForm(lang) {
+export default async function contactForm(lang) {
     const form = $("#contact-form");
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
         
         e.preventDefault();
-        console.log(app);
-        console.log(db.collection("contact_message"));
+        createMessage($("#form-message"), "info-message", languages[lang].sending);
         if (validateForm(form)) {
-            packageForm(form);
+            console.log("Form valid");
+            const newMessage = await packageForm(form);
+            const sendt = await sendMessageToFirebase(newMessage);
+            if (sendt) {
+                createMessage($("#form-message"), "success-message", languages[lang].messageSuccess);
+            }
         } else {
             createMessage($("#form-message"), "error-message", languages[lang].missingInput);
         }
@@ -27,12 +31,10 @@ function validateForm(form) {
     console.log("Validating form...");
     let valid = true;
     $all("input, textarea", form).forEach( (input) => {
-
+        console.log(input.value)
         if(!input.value.trim()) {
-            console.log(input);
             input.classList.add("input-error");
             valid = false;
-            console.log(input + " invalid");
         } else {
             input.classList.remove("input-error");
         }
@@ -40,24 +42,19 @@ function validateForm(form) {
     return valid;
 }
 
-function packageForm(form) {
+async function packageForm(form) {
 
     const message = {
-        name : $("#name").value,
-    email : $("#email").value,
-    subject : $("#subject").value,
-    message : $("#message-text").value,
+        name : $("#name", form).value,
+        email : $("#email", form).value,
+        subject : $("#subject", form).value,
+        text : $("#message-text", form).value,
     }
-    passMessageToFirebase(message);
+    console.log($("#message-text", form).value);
     console.log("Packing form...");
+    return message;
 }
 
 function passMessageToFirebase({name, email, subject, message}) {
-    const newMessageRef = messagesRef.push();
-    newMessageRef.set({
-        name: name,
-        email: email,
-        subject: subject,
-        message_text: message,
-    })
+    
 }

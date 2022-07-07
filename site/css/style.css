@@ -168,6 +168,27 @@ body {
   }
 }
 
+.message {
+  align-self: center;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 0.25rem;
+  width: 100%;
+  text-align: center;
+}
+
+.error-message {
+  background: #B1060F;
+}
+
+.info-message {
+  background: #b3521a;
+}
+
+.success-message {
+  background: #06b13f;
+}
+
 .pseudo-button {
   background: linear-gradient(#197aae, 80%, #0C4869);
   padding: 6px 20px;
@@ -220,10 +241,6 @@ body {
   height: 10px;
   margin-top: -5px;
   z-index: 1;
-}
-
-.message {
-  align-self: center;
 }
 
 .input-error {
@@ -575,7 +592,7 @@ body {
   height: 150px;
 }
 .contact-group #contact-form button {
-  width: 70%;
+  width: 100%;
   background: #197aae;
 }
 .contact-group .contact-social {
