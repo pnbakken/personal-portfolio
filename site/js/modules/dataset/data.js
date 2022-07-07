@@ -127,6 +127,18 @@ export const skills = [
     },
 
     {
+        "id": 13,
+        "name": "Firebase",
+        "icon_url": "https://res.cloudinary.com/dt8j2ptfq/image/upload/v1657213072/portfolio/technology/firebase-48_ygjqcr.png",
+    },
+
+    {
+        "id": 14,
+        "name": "React",
+        "icon_url": "https://res.cloudinary.com/dt8j2ptfq/image/upload/v1657213367/portfolio/technology/react_native_icon_fpi6gu.png",
+    },
+
+    {
         "id": 12,
         "name": "GitHub",
         "icon_url": "https://res.cloudinary.com/dt8j2ptfq/image/upload/v1655573881/portfolio/technology/icon-github-light_aezcgd.svg",
