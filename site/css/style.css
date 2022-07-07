@@ -616,8 +616,7 @@ body {
   .contact-group .contact-social .social-links {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     padding-left: 0 !important;
     gap: 30px;
     margin-top: 0;

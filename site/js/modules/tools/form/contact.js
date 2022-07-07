@@ -52,7 +52,6 @@ async function packageForm(form) {
         time: new Date().toLocaleString(),
         read: false,
     }
-    console.log($("#message-text", form).value);
     console.log("Packing form...");
     return message;
 }
