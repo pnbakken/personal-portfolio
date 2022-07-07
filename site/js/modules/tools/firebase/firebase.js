@@ -32,13 +32,8 @@
  export const app = initializeApp(firebaseConfig);
  export const firestore = getFirestore(app);
 
- export async function sendMessageToFirebase({name, email, subject, text}) {
-    const message = {
-        name: name,
-        email: email,
-        subject: subject,
-        text: text,
-    }
+ export async function sendMessageToFirebase(message) {
+   
     return await sendToFirebase(message, "contact_message");
  }
  export async function sendToFirebase(objectToSend, target) {

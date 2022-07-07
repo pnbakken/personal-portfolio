@@ -49,12 +49,9 @@ async function packageForm(form) {
         email : $("#email", form).value,
         subject : $("#subject", form).value,
         text : $("#message-text", form).value,
+        time: new Date().toLocaleString(),
     }
     console.log($("#message-text", form).value);
     console.log("Packing form...");
     return message;
-}
-
-function passMessageToFirebase({name, email, subject, message}) {
-    
 }
