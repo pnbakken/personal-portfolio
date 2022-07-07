@@ -50,6 +50,7 @@ async function packageForm(form) {
         subject : $("#subject", form).value,
         text : $("#message-text", form).value,
         time: new Date().toLocaleString(),
+        read: false,
     }
     console.log($("#message-text", form).value);
     console.log("Packing form...");
