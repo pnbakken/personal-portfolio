@@ -46,7 +46,7 @@ export const languages = {
                         Until then I'm mostly open for projects or part-time work on anything within my field, but I'm always interested to hear about more long-term job opportunities as well.
                     </p>
                     <p>
-                        More content to come...
+                        More page content to come...
                     </p>`,
 
         techsHeading: `Technologies`,
@@ -160,7 +160,7 @@ export const languages = {
                    Frem til da er jeg åpen for moderate jobber eller deltidsarbeid. På lengre sikt er jeg alltid interessert i å høre om spennende jobbmuligheter.
                 </p>
                 <p>
-                Mer innhold vil komme på siden etterhvert...
+                Mer sideinnhold kommer etterhvert...
                 </p>`,
 
         techsHeading: `Teknologi`,
