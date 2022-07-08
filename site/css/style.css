@@ -224,6 +224,10 @@ body {
   color: #fbfbff;
 }
 
+.disabled-button {
+  opacity: 0.5;
+}
+
 .blue-text {
   color: #197aae;
 }
@@ -617,6 +621,7 @@ body {
   background: #383844;
   border: 2px solid #111120;
   color: #fbfbff;
+  box-shadow: 3px 3px 3px #000;
 }
 .contact-group #contact-form textarea {
   height: 150px;
@@ -637,6 +642,8 @@ body {
   flex-direction: column;
   gap: 30px;
   margin-top: 100px;
+  box-shadow: 3px 3px 3px #000;
+  padding: 2em;
 }
 .contact-group .contact-social .social-links li {
   display: flex;

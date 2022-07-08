@@ -15,6 +15,8 @@ export default async function contactForm(lang) {
             const sendt = await sendMessageToFirebase(newMessage);
             if (sendt) {
                 createMessage($("#form-message"), "success-message", languages[lang].messageSuccess);
+                $("#submit-message").classList.add("disabled-button");
+                $("#submit-message").onclick = (e) => e.preventDefault();
             }
         } else {
             createMessage($("#form-message"), "error-message", languages[lang].missingInput);
