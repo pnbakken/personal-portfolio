@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="128.571" viewBox="0 0 150 128.571">
+  <g id="account" transform="translate(-2.25 -4.5)">
+    <path id="Path_42" data-name="Path 42" d="M9,15.75H76.821V28.081H9ZM9,46.578H89.152V58.909H9Z" transform="translate(28.174 31.456)" fill="#04273a"/>
+    <path id="Path_43" data-name="Path 43" d="M141.536,4.5H12.964A10.714,10.714,0,0,0,2.25,15.214V122.357a10.714,10.714,0,0,0,10.714,10.714H141.536a10.714,10.714,0,0,0,10.714-10.714V15.214A10.714,10.714,0,0,0,141.536,4.5Zm0,10.714V25.929H12.964V15.214ZM12.964,122.357V36.643H141.536v85.714Z" transform="translate(0)" fill="#04273a"/>
+  </g>
+</svg>

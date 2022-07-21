@@ -13,6 +13,9 @@ export default function fixedNavOnScroll() {
 }
 
 function closeOnClick() {
+    $("body").onclick = () => {
+        $(".navbar-collapse").classList.remove("show");
+    }
     const links = $all(".nav-link").forEach(link => link.addEventListener("click", () => {
         $(".navbar-toggler").click();                                            
     }));

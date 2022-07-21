@@ -14,11 +14,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/icon/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/icon/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="manifest" href="/assets/icon/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/icon/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    
     <link rel="shortcut icon" href="assets/icon/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#2b5797">
+    
     <meta name="msapplication-config" content="assets/icon/favicon/browserconfig.xml">
+
     <meta name="theme-color" content="#ffffff">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
@@ -28,14 +33,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+    <!--HOTJAR-->
+
+    <!-- Hotjar Tracking Code for http://www.pnbakken.no -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3032497,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+
 </head>
 <body>
 
     <header id="header-banner">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
             <div class="container-fluid">
                 <div class="navbar-brand">
-                    Pål N. Bakken
+                    <a href="#header-banner" class="nav-link brand-link active">Pål N. Bakken</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,29 +66,37 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#header-banner" class="nav-link active has-text" data-textname="navHome">Home</a>
+                            <a href="#services" class="nav-link has-text" data-textname="navServices">Services</a>
                         </li>
                         <li class="nav-item">
                             <a href="#projects" class="nav-link has-text" data-textname="navWork">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#technologies" class="nav-link has-text" data-textname="navTechnologies">Technologies</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="#contact" class="nav-link has-text" data-textname="navContact">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link has-text" data-textname="navAbout">About me</a>
+                        </li>
                     </ul>
-                    
-                    
+                    <div class="language-select">
+                        <div>
+                            <a href="./?lang=eng"><img src="./assets/icon/language/icons8-great-britain-48.png" alt="English" /></a> <a href="./?lang=nob"><img src="./assets/icon/language/icons8-norway-48.png" alt="Norsk" /></a>
+                        </div>
+                        <button class="discrete-button has-text" id="clear-language" value="Clear language selection" style="display:none;" data-textname="removeStoredLanguage">Clear language selection</button>
+                    </div>                   
                 </div> 
             </div> 
         </nav>
         <div class="banner-content" >
-            <h1 class="banner-headline has-text" data-textname="pageHeading"  data-aos="fade-in" data-aos-duration="800">Responsive, <span class="blue-text">elegant,</span> easy-to-use websites</h1>
+            <h1 class="banner-headline has-text" data-textname="pageHeading"  data-aos="fade-in" data-aos-duration="800">Hi! I'm a student <span class="blue-text">front-end</span> developer!</h1>
             <div class="banner-text">
-                <p class="has-text" data-textname="bannerText" data-aos="fade-in" data-aos-duration="1200">The text I will be using in the hero banner; looking very nice and displayed in the language the user has selected.<br>Some parts of the website might still be unfinished and most of the text needs rewriting.</p>
-                <p data-aos="fade-in" data-aos-duration="1200"><a href="https://pnbakken.no/develop">Latest version of the site here</a></p>
-            <a class="pseudo-button has-text" data-textname="bannerCTA" href="#contact">Get in touch</a>
+
+                <p class="has-text" data-textname="bannerText" data-aos="fade-in" data-aos-duration="1200">I enjoy making good looking, responsive websites that are backed by solid code that works.</p>
+                <a class="pseudo-button has-text" data-textname="bannerCTA" href="#contact">Get in touch</a>
+
+               
+            
+
             </div>
         </div>
         
@@ -73,9 +104,111 @@
     
     <main>
         <div class="divider large-divider"></div>
+
+        <section id="services">
+            <h2 class="has-text" data-textname="servicesHeading">Services</h2>
+        
+            <div class="container services-container">
+
+                <div class=" container-item service-item" id="websites">
+                    <div class="service-content">
+                        <h3 class="has-text" data-textname="websitesServiceHeading">Websites and applications</h3>
+                        <div class="service-text">
+                            <ul class="service-list has-text" data-textname="websitesTextList">
+                                <li>
+                                   I use HTML, CSS, and JavaScript, and other frameworks to build websites from the ground up.
+                                </li>
+                                <li>
+                                    I can design your website, or build one based on existing designs.
+                                </li>
+                                <li>
+                                    Static pages, one-pagers, or larger systems with custom made admin tools and databases.
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div> 
+                    <div class="service-icon"><img src="./assets/icon/services/icon-computer.svg" alt="websites and applications"/></div>
+                    
+                </div>
+
+                <div class=" container-item service-item" id="photography">
+                    <div class="service-content">
+                        <h3 class="has-text" data-textname="photographyServiceHeading">Photography</h3>
+                        <div class="service-text">
+                            <ul class="service-list has-text" data-textname="photographyTextList">
+                                <li>
+                                    Product photography.
+                                </li>
+                                <li>
+                                    Mood-setting stock photography.
+                                </li>
+                                <li>
+                                    High quality, high-resolution photographs for use online and in print.
+                                </li>
+                               <li>
+                                    Location-dependent service. Get in touch to discuss further.
+                               </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="service-icon"><img src="./assets/icon/services/icon-photo.svg" alt="photography"/></div>
+                </div>
+
+                <div class=" container-item service-item" id="online-consulting">
+                    
+                    <div class="service-content">
+                        <h3 class="has-text" data-textname="consultingServiceHeading">Online consulting</h3>
+                        <div class="service-text">
+                            <ul class="service-list has-text" data-textname="consultingTextList">
+                                <li>
+                                    Help map and formulate your needs in terms of design and technical requirements.
+                                </li>
+                                <li>
+                                    Help with SEO and Google rankings.
+                                </li>
+                                <li>
+                                    Meta content and keywords. WCAG standards.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="service-icon"><img src="./assets/icon/services/icon-online.svg" alt="online consulting"/></div>
+                </div>
+               
+                <div class=" container-item service-item" id="authoring">
+                    
+                    <div class="service-content">
+                        <h3 class="has-text" data-textname="contentServiceHeading">Content Authoring</h3>
+                        <div class="service-text">
+                            <ul class="service-list has-text" data-textname="contentTextList">
+                                <li>
+                                    Blog posts, short texts, etc.
+                                </li>
+                                <li>
+                                    Social media content.
+                                </li>
+                                <li>
+                                    I also offer editing, translation, and proofreading services. Fluently bilingual in English and Norwegian.
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="service-icon"><img src="./assets/icon/services/icon-copy.svg" alt="content authoring"/> </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
         <section id="projects">
 
             <h2 class="has-text" data-textname="projectsHeading">Projects</h2>
+            
             <div class="container projects-container"></div>
 
         </section> 
@@ -88,37 +221,42 @@
                 <form id="contact-form">
                     <h3 id="form-heading" class="has-text" data-textname="contactFormHeading">Send me a message</h3>
                     <div class="mb-3">
-                        <label for="email" class="form-label has-text" data-textname="contactEmail">Email address</label>
+                        <label for="email" class="form-label has-text" data-textname="contactEmail">Email address (required)</label>
                         <input type="email" class="form-control" id="email" placeholder="name@example.com">
                     </div>
                     <div class="mb-3">
-                        <label for="name" class="form-label has-text" data-textname="contactName">Email address</label>
+                        <label for="name" class="form-label has-text" data-textname="contactName">Your name (required)</label>
                         <input type="text" class="form-control" id="name" placeholder="">
                     </div>
                     <div class="mb-3">
-                        <label for="subject" class="form-label has-text" data-textname="contactSubject">Message subject</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <label for="subject" class="form-label has-text" data-textname="contactSubject">Message subject (required)</label>
+                        <input type="text" class="form-control" id="subject" placeholder="">
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label has-text" data-textname="messageText">Your message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="message" class="form-label has-text" data-textname="messageText">Your message (required)</label>
+                        <textarea class="form-control" id="message-text" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
+                        
+                        <div id="form-message"></div>
                         <button type="submit" id="submit-message" class="form-button pseudo-button has-text" data-textName="sendButton">Send</button>
                     </div>  
-                    <div id="form-message"></div>
+                    
                 </form>
                 <div class="contact-social">
-                    <h3 id="social-heading" class="has-text" data-textname="socialHeading">Find me other places</h3>
+                   
                     <ul class="social-links">
                         <li>
-                            <a class="social-link" href="https://github.com/pnbakken"><img class="social-icon" src="./assets/icon/social/awesome-github.svg" alt="github"/> GitHub</a>
+                            <a class="social-link" href="https://github.com/pnbakken"><img class="social-icon" src="./assets/icon/social/awesome-github.svg" alt="github"/> <span class="icon-text">GitHub</span></a>
                         </li>
                         <li>
-                            <a class="social-link" href="https://www.linkedin.com/in/p%C3%A5l-bakken-0b2295204/"><img class="social-icon" src="./assets/icon/social/awesome-linkedin-in.svg" alt="linkedin"/> LinkedIn</a>
+                            <a class="social-link" href="https://www.linkedin.com/in/p%C3%A5l-bakken-0b2295204/"><img class="social-icon" src="./assets/icon/social/awesome-linkedin-in.svg" alt="linkedin"/><span class="icon-text">LinkedIn</span></a>
                         </li>
                         <li>
-                            <a class="social-link" href="https://www.instagram.com/pnbakken/"><img class="social-icon" src="./assets/icon/social/awesome-instagram.svg" alt="linkedin" /> Instagram</a>
+                            <a class="social-link" href="https://www.instagram.com/pnbakken/"><img class="social-icon" src="./assets/icon/social/awesome-instagram.svg" alt="linkedin" /> <span class="icon-text">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="mailto:contact@pnbakken.no"><img class="social-icon" src="./assets/icon/social/icon-email.svg" /> <span class="icon-text">contact@pnbakken.no</span> </a>
                         </li>
                     </ul>
                 </div>
@@ -127,37 +265,65 @@
 
         <div class="divider"></div>
 
-        <section id="technologies">
-
-            <h2 class="has-text" data-textname="techsHeading">Technologies</h2>
-            <div class="container skills-container"></div>
-                
-        </section>
-
-        <div class="divider"></div>
-
         <section id="about">
             <h2 class="has-text" data-textname="aboutHeading">About me</h2>
-        </section>
-        <div class="divider"></div>
-    </main>
+            <article class="container about-container">
+                <div class="about-content">
+                    <div class="bio-image"></div>
+                    <div class="bio-text has-text" data-textname="bioText">
+                        <p>
+                            Hi, I'm Pål and I'm studying for a degree in front-end development, currently on track to graduate in December 2022.
+                        </p> 
+                        <p>
+                            Until then I'm open for projects or part-time work on anything within my field, but I'm always interested to hear about more long-term job opportunities as well.
+                        </p>
+                        <p>
+                            More page content to come...
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
+            <article id="technologies">
+
+                <h2 class="has-text" data-textname="techsHeading">Technologies</h2>
+                <div class="container skills-container"></div>
+                    
+            </article>
+    
+        </section>
+        
+        <div class="divider"></div>
+        
+        
+        <div class="page-copy">&copy; 2022 Pål N. Bakken</span>
+    </main>
+    
     <footer>
-        <div class="footer-links"></div><span class="footer-copy">&copy; 2022 Pål N. Bakken</span>
         <div class="language-select">
             <div>
                 <a href="./?lang=eng"><img src="./assets/icon/language/icons8-great-britain-48.png" alt="English" /></a> <a href="./?lang=nob"><img src="./assets/icon/language/icons8-norway-48.png" alt="Norsk" /></a>
             </div>
             <button class="discrete-button has-text" id="clear-language" value="Clear language selection" style="display:none;" data-textname="removeStoredLanguage">Clear language selection</button>
         </div>
+        
+        <div class="footer-links"><span class="has-text" data-textname="viewOnGH">View this site on</span> <a href="https://github.com/pnbakken/personal-portfolio">GitHub</a></div>
     </footer>
 
+
+ 
     
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script type="module" src="./js/script.js"></script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <script type="module" src="./js/script.js"></script>
 </body>
 </html>

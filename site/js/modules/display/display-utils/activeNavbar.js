@@ -7,7 +7,7 @@ export default function activeNavbar() {
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop-500;
+        const sectionTop = section.offsetTop;
         if (scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }

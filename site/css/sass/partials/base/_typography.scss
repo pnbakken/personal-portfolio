@@ -34,20 +34,38 @@ a {
 }
 
 
-nav {
-    .navbar-brand {
-        font-size: 32px;
+.custom-nav {
+    .navbar-brand a {
+        transition: all $common-transition ease-in-out!important;
+        font-size: 40px!important;
+        font-weight: 500!important;
         @media(max-width: 768px) {
-            font-size: 24px;
+            font-size: 24px!important;
         }
-    }
+    } 
 
     a {
         color: $color-white;
+        font-size: 18px!important;
     }
-    a.active {
-        color: $color-medium-blue;
+    // a.active {
+    //     color: $color-medium-blue;
+    // }
+    a.brand-link, a.nav-link {
+        text-decoration: underline 2px transparent;
+        text-underline-offset: 10px;
     }
+    a.brand-link.active, a.nav-link.active {
+        text-decoration-color: $color-medium-blue;
+        color: $color-white!important;
+        
+    }
+    
+    
+}
+
+.scrolling-nav .navbar-brand a {
+    font-size: 24px!important;
 }
 
 .social-links {
@@ -55,4 +73,9 @@ nav {
         font-weight: 300;
         font-style: italic;
     }
+}
+
+.page-copy {
+    font-size: 24px;
+    font-weight: 300;
 }

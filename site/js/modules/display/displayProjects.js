@@ -3,14 +3,16 @@ import { fetchFromAPI } from "../tools/interfaceAPI.js";
 import { languages } from "../tools/languages/languages.js";
 import addLoader from "./display-utils/addLoader.js";
 import { createGenericErrorMessage } from "./display-utils/createMessage.js";
+import {projects} from "../dataset/data.js";
 
 export default async function displayProjects(lang="eng") {
     const target = document.querySelector(".projects-container");
     addLoader(target, lang);
 
-    const projects = await fetchFromAPI("api/projects");
+    //const projects = await fetchFromAPI("api/projects");
+    console.log(projects)
     if (projects) {
-        target.innerHTML = buildProjectList(projects.data, lang);
+        target.innerHTML = buildProjectList(projects, lang);
     } else {
         createGenericErrorMessage(target, lang);
     }
@@ -21,22 +23,22 @@ function buildProjectList(projects, lang) {
 
     let counter = 0;
     projects.forEach((project) => {
-        html += projectToHTML(project.attributes, counter);
+        html += projectToHTML(project, counter);
         counter++;
     });
-    html += `<div class="container-item project-item" data-aos="fade-up" data-aos-duration="3000">
+    html += `<div class="container-item project-item project-call-item" data-aos="fade-up" data-aos-duration="3000">
                 <h3 class="has-text">${languages[lang].yourProject}</h3>
-                <p class="has-text" data-textname="projectCall">${languages[lang].projectCall}</p>
                 <a class="pseudo-button has-text" data-textname="bannerCTA" href="#contact">${languages[lang].bannerCTA}</a>
+                <p class="has-text" data-textname="projectCall">${languages[lang].projectCall}</p>
             </div>`;
     return html;
 
     function projectToHTML(project, counter) {
-
+        console.log(project)
         const direction = (counter % 2 === 0) ? "down" : "up";
         const langDescription = `description_${lang}`;
         console.log(project);
-        return `<div class="container-item project-item" data-aos="fade-${direction}" data-aos-duration="1500">
+        return `<div class="container-item project-item" data-aos="fade-in" data-aos-duration="1500">
                    
                     <div class="item-image project-image" style="background-image: url('${project.image_url}');"></div>
                     <h3 class="project-name">${project.name}</h3>

@@ -5,20 +5,22 @@
 //Brand colours
 
     $color-abyss-blue: #111120;
-    $color-abyss-gray: #1e1e27;
+    $color-abyss-gray: #383844;
     $color-abyss-blue-transparent: #111120f0;
     $color-white: #fbfbff;
 
     $color-medium-blue: #197aae;
     $color-dark-blue: #0C4869;
+    $color-dark-blue-gray: #4A6D80;
 
-    $color-blue-gradient: linear-gradient($color-dark-blue, 80%, $color-abyss-blue);
+    $color-blue-gradient: linear-gradient($color-medium-blue, 80%, $color-dark-blue);
 
 // System colours
 
-    $color-orange: #FE5F00;
+    $color-orange: #b3521a;
     $color-yellow:  #FFE900;
     $color-red: #B1060F;
+    $color-green: #06b13f;
 
 
 /*******

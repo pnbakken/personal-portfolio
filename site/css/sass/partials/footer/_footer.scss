@@ -1,22 +1,35 @@
 footer {
     display: flex;
-    flex-direction:column-reverse;
-    justify-content: space-evenly;
+    flex-direction:column;
+    justify-content: center;
     align-items: center;
-    height: 100px;
-    gap: 20px;
+    height: fit-content;
+    padding: 2em 0;
+    gap: 15px;
+    margin-top: 50px;
+
+    background: $color-blue-gradient;
+
+    a {
+        color: $color-white;
+    }
+    a:hover,
+    a:focus {
+        color: $color-white;
+        text-decoration: underline;
+    }
 }
 
 .language-select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 
     div {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 30px;
     }
     img {
         width: 30px;

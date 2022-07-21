@@ -1,5 +1,5 @@
 import { getFromStorage, removeFromStorage, saveToStorage } from "../../settings/storage.js";
-import { $ } from "../helpers/domSelector.js";
+import { $, $all } from "../helpers/domSelector.js";
 import { languages } from "./languages.js";
 
 
@@ -22,11 +22,14 @@ export function clearLanguage() {
 }
 
 export function insertClearButton(lang) {
-    $("#clear-language").style = "display: inline";
-    $("#clear-language").onclick = ((event) => {
-        window.location.search = ""; // prevent language getting saved again if user refreshes the page.
-        event.preventDefault();
-        clearLanguage();
-        $("#clear-language").innerHTML = languages[lang].languageRemoved;
+    $all("#clear-language").forEach(button => {
+        button.style = "display: inline";
+        button.onclick = ((event) => {
+            window.location.search = ""; // prevent language getting saved again if user refreshes the page.
+            event.preventDefault();
+            clearLanguage();
+            $("#clear-language").innerHTML = languages[lang].languageRemoved;
+        });
     });
+    
 }

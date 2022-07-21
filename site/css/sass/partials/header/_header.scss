@@ -1,9 +1,9 @@
 @import "./navbar";
 
 #header-banner {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-image: url("../../../../assets/image/banner-image-darker.png");
+    background-image: url("/assets/image/banner-image.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -23,7 +23,7 @@
         width: 800px;
         max-width: 95%;
         align-items: center;
-        
+        min-height: fit-content;
 
         @media(max-width: 1111px) {
             left: 30px;
@@ -38,7 +38,9 @@
             flex-direction: column;
             width: 80%;
             gap: 30px;
+            height: fit-content;
             align-items: center;
+            position: relative;
 
             @media(max-width: 1111px) {
                 width: 80%;
@@ -50,5 +52,10 @@
         
         
     }
-
+    .language-select {
+        @media(min-width: 991px) {
+            display: none;
+        }
+        padding-bottom: 2em;
+    }
 }

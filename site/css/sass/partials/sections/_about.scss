@@ -1,0 +1,38 @@
+.about-content {
+    height: fit-content;
+    display: flex;
+    flex-direction: row!important;
+    width: 80%;
+    max-width: 1200px;
+    align-items: top;
+    justify-content: center;
+    gap: 5%;
+
+    @media(max-width: 1024px) {
+        flex-direction: column!important;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+     .bio-image {
+        width: 300px;
+        height: 300px;
+        background-image: url("/assets/image/author-image.jpg");
+        background-size: cover;
+        border-radius: 0.2rem;
+     }
+
+     .bio-text  {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media(max-width: 1024px) {
+            width: 80%;
+        }
+        @media(max-width: 550px) {
+            width: 95%;
+        }
+     }
+}

@@ -8,10 +8,12 @@ import { languages } from "./modules/tools/languages/languages.js";
 import { createMessage } from "./modules/display/display-utils/createMessage.js";
 import fixedNavOnScroll from "./modules/display/display-utils/fixedNavOnScroll.js";
 import activeNavbar from "./modules/display/display-utils/activeNavbar.js";
+import contactForm from "./modules/tools/form/contact.js";
 
 
 fixedNavOnScroll();
 activeNavbar();
+
 (function init() {
     let lang = "eng";
 
@@ -24,21 +26,15 @@ activeNavbar();
    
         translate(lang);
     } else if (urlParams.has("lang")) {
-    
         lang = urlParams.get("lang");
         saveLanguage(lang);
         insertClearButton(lang);
         translate(lang);
-    
-
     } 
 
     displayProjects(lang);
     displaySkills(lang);
-    $("#submit-message").onclick = ((event) => {
-        event.preventDefault();
-        createMessage($("#form-message"), "info-message", languages[lang].formNotActive);
-    });
+    contactForm(lang);
 })();
 
 

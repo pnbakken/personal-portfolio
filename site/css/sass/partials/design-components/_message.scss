@@ -1,0 +1,22 @@
+
+
+.message {
+    align-self: center;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.25rem;
+    width: 100%;
+    text-align: center;
+}
+
+.error-message {
+    background: $color-red;
+}
+
+.info-message {
+    background: $color-orange;
+}
+
+.success-message {
+    background: $color-green;
+}

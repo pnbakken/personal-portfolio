@@ -74,9 +74,15 @@
     
 }
 
+.project-call-item {
+    text-align: center;
+    justify-content: flex-end;
+}
+
 .project-item:hover .project-details {
     opacity: 1;
 }
 .project-item:not(:hover) .project-details {
     opacity: 0;
 }
+

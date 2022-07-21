@@ -1,6 +1,8 @@
+@import "./loader";
+@import "./message";
 .pseudo-button {
     background: $color-blue-gradient;
-    padding: 12.5px 20px;
+    padding: 6px 20px;
     width: fit-content;
     border-radius: 0.4rem;
     border: 1px solid $color-dark-blue;
@@ -8,8 +10,8 @@
     color: $color-white;
 }
 .pseudo-button:hover {
-    border-color: $color-white;
-    color: $color-white;
+    color: $color-white!important;
+    box-shadow: $common-shadow;
 }
 
 .discrete-button {
@@ -22,6 +24,10 @@
     color: $color-white;
 }
 
+.disabled-button {
+    opacity: 0.5;
+}
+
 .blue-text {
     color: $color-medium-blue;
 }
@@ -30,9 +36,9 @@
     background: $color-blue-gradient;
     width: 75%;
     height: 5px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    border-radius: 2.5px;
+    margin-top: 150px;
+    
+    border-radius: 0.4rem;
     box-shadow: $common-shadow;
 
     @media(max-width:425px) {
@@ -45,5 +51,22 @@
     height: 10px;
     margin-top: -5px;
     z-index: 1;
+    position: relative;
+    @media(max-height: 600px) {
+        margin-top: 100px;
+    }
+    @media(max-height: 450px) {
+        margin-top: 200px;
+    }
 }
 
+.input-error{
+    border-color: $color-red!important;
+}
+
+.page-copy {
+    align-self: center;
+    justify-self: center;
+    margin-top: 100px;
+    
+}

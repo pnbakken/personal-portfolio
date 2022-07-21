@@ -1,15 +1,28 @@
-nav {
+.custom-nav {
     display: flex;
-    height: 130px;
+    
     gap: 100px;
-    padding: 0 30px 0 30px!important;
+    padding: 0!important;
+    padding-top: 50px!important;
+    padding-bottom: 10px!important;
     align-items: center;
     width: 100%;
-    position: absolute;
+    position: relative;
     transition: $common-transition;
+    z-index: 1;
+    @media(max-width:991px) {
+        background: $color-abyss-blue;
+        
+    }
+
+    .container-fluid {
+        width: 100%!important;
+        padding: 0!important;
+    }
     .navbar-brand {
         color: $color-white;
         margin-right: 90px;
+        margin-left: 30px;
         @media(max-width: 991px) {
             margin-right: 0;
         }
@@ -17,10 +30,29 @@ nav {
 
     .navbar-nav {
         list-style-type: none;
-        gap: 5px;
-        @media (min-width: 991px) {
+        gap: 50px;
+
+        @media (min-width: 1110px) {
             gap: 90px;
         }
+
+        @media(max-width: 991px) {
+            
+            justify-content: space-evenly;
+            align-items: baseline;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            gap: 10px!important;
+            height: 60vh;
+        }
+        @media(max-height: 600px) {
+            gap: 5px!important;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            height: 40vh;
+        }
+
+        
         
         a {
             transition: $common-transition;
@@ -35,24 +67,25 @@ nav {
         }
     }
 
-    .nav-toggle {
-        display: none;
+    .navbar-toggler {
+        margin-right: 30px;
     }
 
     @media(max-width:1024px) {
 
         justify-content: space-between;
         gap: 0;
-        padding: 15px!important;
-        .nav-links {
-            display: none;
-        }
+        
+    }
 
-        .nav-toggle {
-            display: block;
+    .collapse,.collapsing {
+        padding-left: 30px!important;
+        @media(max-width: 991px) {
+            box-shadow: $common-shadow;
         }
     }
 
+    
     
 }
 
@@ -60,17 +93,14 @@ nav {
     background: $color-abyss-blue;
     position: fixed;
     z-index: 2;
-    height: 80px;
-<<<<<<< HEAD
-    transition: $common-transition ease-in;
-=======
-    transition: $common-transition ease-in;
->>>>>>> 547477697cee15d95018e5545bfbb9af1fdeef33
-
-    .container-fluid {
+    padding-top: 25px!important;
+    padding-bottom: 10px!important;
+    transition: $common-transition ease;
+    margin-top: 0;
+    box-shadow: $common-shadow;
+    
+    .show {
         background: $color-abyss-blue;
-        width:100%;
-        margin: 0!important;
     }
 }
 
